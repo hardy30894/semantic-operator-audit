@@ -10,8 +10,7 @@ Query engines now evaluate filters, joins, maps and aggregates with an LLM, and 
 caches and pipelines rewrite those operators as if each answer depended only on the record and the
 meaning of the condition. This repository tests eleven identities those rewrites rely on, and counts a
 violation only when two logically equivalent queries disagree more than one query disagrees with itself.
-It holds the code, the benchmark and every call behind the paper *Do Semantic Operators Survive Query
-Rewriting? A Noise-Calibrated Audit of LLM-Powered Query Processing*.
+It holds the code, the benchmark and every call behind the paper.
 
 ![Excess divergence for every identity, model and dataset](docs/figures/heatmap.png)
 
