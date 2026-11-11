@@ -1,0 +1,23 @@
+{
+  "run_id": "grid-argq-A-batch",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 1345,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "params": {
+      "max_tokens": 1024,
+      "thinking": {
+        "type": "between_tools"
+      }
+    }
+  },
+  "started": 1794126141.7437384,
+  "finished": 1794126239.0201504
+}

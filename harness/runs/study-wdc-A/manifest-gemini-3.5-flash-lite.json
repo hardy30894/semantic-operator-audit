@@ -1,0 +1,31 @@
+{
+  "run_id": "study-wdc-A",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "python": "3.12.7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 17600,
+  "backend": {
+    "provider": "openrouter",
+    "model": "google/gemini-3.5-flash-lite",
+    "params": {
+      "max_completion_tokens": 1024,
+      "provider": {
+        "order": [
+          "google-ai-studio"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "minimal"
+      }
+    }
+  },
+  "started": 1791938843.7345521,
+  "finished": 1791938843.9395761
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "grid-argkp-A-batch",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 1345,
+  "backend": {
+    "provider": "openrouter",
+    "model": "openai/gpt-5.6-luna",
+    "params": {
+      "max_completion_tokens": 1024,
+      "provider": {
+        "order": [
+          "openai"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "none"
+      }
+    }
+  },
+  "started": 1794190436.9976718,
+  "finished": 1794190525.802867
+}

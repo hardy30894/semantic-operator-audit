@@ -1,0 +1,34 @@
+# study-wdc-A: confirmatory run (PREREGISTRATION.md §4.3). Do not edit after timestamping.
+#   python3 -m semaudit run configs/study-wdc-A.toml --run-id study-wdc-A --backend <arm> --yes
+include = ["models.toml"]
+
+[run]
+seed = 1018001
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/wdc-A"
+
+[identities.symmetry]
+enabled = true
+n_blocks = 40
+block_size = 6
+positives = 3
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 300
+count_batch = 10
+
+[identities.batch]
+enabled = true
+n_rows = 300
+batch_size = 10
+
+[identities.idempotence]
+enabled = true
+n_rows = 200

@@ -1,0 +1,16 @@
+[project]
+name = "semaudit"
+version = "0.3.0"
+description = "Noise-calibrated metamorphic audit of LLM-powered semantic operators"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.116"]
+openai = ["openai>=2.0"]
+google = ["google-genai"]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

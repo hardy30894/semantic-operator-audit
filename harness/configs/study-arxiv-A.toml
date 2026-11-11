@@ -1,0 +1,30 @@
+# study-arxiv-A: a new-domain predicate pair (scientific abstracts, arXiv), PREREG_ADDENDUM_B.md. Do not edit after timestamping.
+#   python3 -m extension.cli run configs/study-arxiv-A.toml --run-id study-arxiv-A --backend <arm> --max-cost-factor 2 --yes
+# The matching identities need gold entity clusters, which this dataset lacks, so they are off. The
+# cleaning map does not depend on the predicate pair, so idempotence (H6) runs in each dataset's pair A only.
+include = ["models-v2.toml"]
+
+[run]
+seed = 1021301
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/arxiv-A"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 300
+count_batch = 10
+
+[identities.batch]
+enabled = true
+n_rows = 300
+batch_size = 10
+
+[identities.idempotence]
+enabled = true
+n_rows = 200

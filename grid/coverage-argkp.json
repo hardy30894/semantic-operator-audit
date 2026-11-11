@@ -1,0 +1,309 @@
+{
+ "to_run": [
+  {
+   "model": "haiku-5.5",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.17615277777777777
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.01717882307692308
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.048536325000000005
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.017615277777777775
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.0815076869849774
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.2750611111111111
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.014753436923076922
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.06801508633333334
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.02750611111111111
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.1278477628403156
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.34000833333333336
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.02769925384615385
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.12361005000000001
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.034000833333333334
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.19269101666666671
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.03678639166666667
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0022442016571428574
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.0095709532
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.0036786391666666666
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.01629416
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 1.6823853533715525
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.11998199999999999
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.56400025
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.16823853533715524
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.87517725
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.4881076746036035
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.346986
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.9658236666666666
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.3488107674603604
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.639054767263623
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.5277005505426318
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.14572112
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6801508633333334
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.25277005505426314
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.2592180000000002
+  }
+ ],
+ "sources": {
+  "haiku-5.5": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gpt-5.6-luna": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gemini-3.5-flash-lite": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "qwen-3.7-flash": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gemini-3.5-flash": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "sonnet-5.5": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gpt-5.6-terra": {
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  }
+ },
+ "total_calls": 101115,
+ "total_usd": 16.704885085439557
+}

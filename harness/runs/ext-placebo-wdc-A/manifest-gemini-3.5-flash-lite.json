@@ -1,0 +1,40 @@
+{
+  "run_id": "ext-placebo-wdc-A",
+  "harness_version": "0.3.0",
+  "ext_design": "ext-2026-10-21.2",
+  "template_version": "2026-10-14.1",
+  "extension_template_versions": {
+    "explain": "ext-2026-10-21.explain-1",
+    "format": "ext-2026-10-21.format-1"
+  },
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 10000,
+  "backend": {
+    "provider": "openrouter",
+    "model": "google/gemini-3.5-flash-lite",
+    "params": {
+      "max_completion_tokens": 1024,
+      "provider": {
+        "order": [
+          "google-ai-studio"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "minimal"
+      }
+    }
+  },
+  "segments": [
+    "base",
+    "reword"
+  ],
+  "started": 1792654308.6454291,
+  "finished": 1792654660.4212506
+}

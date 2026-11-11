@@ -1,0 +1,23 @@
+{
+  "run_id": "grid-wdc-A-count",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 1100,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-haiku-5-5",
+    "params": {
+      "max_tokens": 1024,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "started": 1794119534.8233514,
+  "finished": 1794119582.567413
+}

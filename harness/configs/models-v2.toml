@@ -1,0 +1,63 @@
+# Model roster for v2 (PREREG_ADDENDUM_A.md). The v1 arms keep their names and request settings, so
+# v2 runs pool and compare with v1 by arm name. Claude models are called through Anthropic's API
+# (kind "anthropic"); every other model goes through OpenRouter pinned to a single host with fallbacks
+# disabled, as in v1 (models.toml). Prices are list prices per million tokens; for kind "anthropic"
+# the logged cost is computed from them (extension/priced.py), because that API returns token counts
+# only. Run with `python3 -m extension.cli`, which registers the priced backend.
+
+# Thinking off, as in v1 (0 reasoning tokens in study-wdc-A). Haiku 5.5 runs adaptive thinking when
+# `thinking` is omitted, so it is turned off explicitly; temperature stays at the default.
+[[backends]]
+name = "haiku-5.5"
+kind = "anthropic"
+model = "claude-haiku-5-5"
+params = { max_tokens = 1024, thinking = "disabled" }
+price_in_per_mtok = 0.10
+price_out_per_mtok = 0.50
+measured_usd_per_1k_calls = 0.033  # v1 pilot, 2026-10-13
+
+[[backends]]
+name = "gpt-5.6-luna"
+kind = "openrouter"
+model = "openai/gpt-5.6-luna"
+params = { upstream = "openai", reasoning_effort = "none", max_tokens = 1024 }
+price_in_per_mtok = 0.20
+price_out_per_mtok = 1.20
+measured_usd_per_1k_calls = 0.049  # v1 pilot, 2026-10-13
+
+[[backends]]
+name = "gemini-3.5-flash-lite"
+kind = "openrouter"
+model = "google/gemini-3.5-flash-lite"
+params = { upstream = "google-ai-studio", reasoning_effort = "minimal", max_tokens = 1024 }
+price_in_per_mtok = 0.30
+price_out_per_mtok = 2.50
+measured_usd_per_1k_calls = 0.075  # v1 pilot, 2026-10-13 (no thinking tokens at "minimal")
+
+[[backends]]
+name = "qwen-3.7-flash-t0"
+kind = "openrouter"
+model = "qwen/qwen3.7-flash"
+params = { upstream = "alibaba", reasoning_effort = "none", temperature = 0.0, seed = 20261014, top_logprobs = 5, max_tokens = 1024 }
+price_in_per_mtok = 0.03
+price_out_per_mtok = 0.13
+measured_usd_per_1k_calls = 0.007  # v1 pilot, 2026-10-13
+
+[[backends]]
+name = "deepseek-v3.2"
+kind = "openrouter"
+model = "deepseek/deepseek-v3.2"
+params = { upstream = "google-vertex", reasoning_effort = "none", max_tokens = 1024 }
+price_in_per_mtok = 0.56
+price_out_per_mtok = 1.68
+
+# Stronger arm (PREREG_ADDENDUM_A.md, A2): the larger model of Flash-Lite's family, at the same
+# (lowest) reasoning setting and host.
+[[backends]]
+name = "gemini-3.5-flash"
+kind = "openrouter"
+model = "google/gemini-3.5-flash"
+params = { upstream = "google-ai-studio", reasoning_effort = "minimal", max_tokens = 1024 }
+price_in_per_mtok = 1.50
+price_out_per_mtok = 9.00
+measured_usd_per_1k_calls = 0.301  # Flash-Lite's v1 token counts at these prices

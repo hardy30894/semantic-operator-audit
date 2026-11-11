@@ -1,0 +1,23 @@
+# Abt-Buy electronics, predicate pair B.
+name = "abt-B"
+records = "../abt-buy/records.csv"
+text_fields = ["title", "description", "price"]
+match_claim = "Record 1 and Record 2 refer to the same real-world product."
+
+[predicates.p]
+text = "The product is used to capture, record or display images or video (for example a camera, a camcorder, a television, a projector or a DVD player)."
+negation = "The product is not used to capture, record or display images or video (for example a camera, a camcorder, a television, a projector or a DVD player)."
+fields = ["title", "description"]
+
+[predicates.q]
+text = "The product connects wirelessly (for example via Bluetooth or Wi-Fi)."
+negation = "The product does not connect wirelessly (for example via Bluetooth or Wi-Fi)."
+fields = ["title", "description"]
+
+[conjunction]
+pq = "The product is used to capture, record or display images or video (for example a camera, a camcorder, a television, a projector or a DVD player), and it connects wirelessly (for example via Bluetooth or Wi-Fi)."
+qp = "The product connects wirelessly (for example via Bluetooth or Wi-Fi), and it is used to capture, record or display images or video (for example a camera, a camcorder, a television, a projector or a DVD player)."
+
+[map]
+field = "title"
+instruction = "Rewrite this product title in canonical form: the brand name, then the product line and model or part number, then the most important specification, separated by single spaces. Remove colors, marketing words, shop names and punctuation, and write it in English."

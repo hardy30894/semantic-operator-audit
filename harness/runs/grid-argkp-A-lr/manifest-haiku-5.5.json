@@ -1,0 +1,34 @@
+{
+  "run_id": "grid-argkp-A-lr",
+  "harness_version": "0.3.0",
+  "ext_design": "ext-2026-10-21.2",
+  "template_version": "2026-10-14.1",
+  "extension_template_versions": {
+    "explain": "ext-2026-10-21.explain-1",
+    "format": "ext-2026-10-21.format-1"
+  },
+  "python": "3.12.7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 10100,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-haiku-5-5",
+    "params": {
+      "max_tokens": 1024,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "segments": [
+    "base",
+    "reword"
+  ],
+  "started": 1794189845.259949,
+  "finished": 1794190412.6543841
+}

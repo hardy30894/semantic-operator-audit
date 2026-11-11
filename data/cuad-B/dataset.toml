@@ -1,0 +1,29 @@
+# CUAD contract clauses, predicate pair B: two clause types (both gold), overlapping in non-transferable licenses.
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; both p and q have a rule, so the run's design records ground truth for every claim.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "cuad-B"
+records = "../cuad/records.csv"
+text_fields = ["agreement", "clause"]
+match_claim = "Record 1 and Record 2 come from the same contract."
+
+[predicates.p]
+text = "The clause concerns a license to intellectual property or the ownership of intellectual property (for example granting, limiting or extending a trademark or software license, or assigning inventions)."
+negation = "The clause does not concern a license to intellectual property or the ownership of intellectual property (for example granting, limiting or extending a trademark or software license, or assigning inventions)."
+fields = ["clause"]
+rule = { field = "labels", contains_any = [";License Grant;", ";Non-Transferable License;", ";Affiliate License-Licensor;", ";Affiliate License-Licensee;", ";Unlimited/All-You-Can-Eat-License;", ";Irrevocable Or Perpetual License;", ";Ip Ownership Assignment;", ";Joint Ip Ownership;"] }
+
+[predicates.q]
+text = "The clause restricts a party from assigning or transferring the agreement, its rights or a license granted under it, including by sublicensing (for example by requiring the other party's consent)."
+negation = "The clause does not restrict a party from assigning or transferring the agreement, its rights or a license granted under it, including by sublicensing (for example by requiring the other party's consent)."
+fields = ["clause"]
+rule = { field = "labels", contains_any = [";Anti-Assignment;", ";Non-Transferable License;"] }
+
+[conjunction]
+pq = "The clause concerns a license to intellectual property or the ownership of intellectual property (for example granting, limiting or extending a trademark or software license, or assigning inventions), and the clause restricts a party from assigning or transferring the agreement, its rights or a license granted under it, including by sublicensing (for example by requiring the other party's consent)."
+qp = "The clause restricts a party from assigning or transferring the agreement, its rights or a license granted under it, including by sublicensing (for example by requiring the other party's consent), and the clause concerns a license to intellectual property or the ownership of intellectual property (for example granting, limiting or extending a trademark or software license, or assigning inventions)."
+
+[map]
+field = "clause"
+instruction = "Rewrite this contract clause in canonical form: write numbers in digits only (for example \"thirty (30) days\" becomes \"30 days\"), remove section numbers, headings, redaction marks such as [***] and omission marks such as [...], and change text written in capital letters to sentence case. Keep every other word unchanged."

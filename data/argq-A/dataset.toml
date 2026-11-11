@@ -1,0 +1,29 @@
+# IBM ArgQ arguments, predicate pair A: stance (gold) and a topic test that is a fixed list of topics.
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; both p and q have a rule, so the run's design records ground truth for every claim.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "argq-A"
+records = "../argq/records.csv"
+text_fields = ["topic", "argument"]
+match_claim = "Record 1 and Record 2 make the same argument."
+
+[predicates.p]
+text = "The argument supports the position stated in the topic."
+negation = "The argument does not support the position stated in the topic."
+fields = ["topic", "argument"]
+rule = { field = "stance", equals = "pro" }
+
+[predicates.q]
+text = "The topic proposes to ban, prohibit or abolish something."
+negation = "The topic does not propose to ban, prohibit or abolish something."
+fields = ["topic"]
+rule = { field = "topic", in = ["Homeschooling should be banned", "Payday loans should be banned", "We should abolish intellectual property rights", "We should abolish the Olympic Games", "We should abolish the three-strikes laws", "We should abolish zoos", "We should ban algorithmic trading", "We should ban cosmetic surgery", "We should ban cosmetic surgery for minors", "We should ban factory farming", "We should ban fast food", "We should ban human cloning", "We should ban naturopathy", "We should ban private military companies", "We should ban telemarketing", "We should ban the use of child actors", "We should ban whaling", "We should fight for the abolition of nuclear weapons", "We should prohibit flag burning"] }
+
+[conjunction]
+pq = "The argument supports the position stated in the topic, and the topic proposes to ban, prohibit or abolish something."
+qp = "The topic proposes to ban, prohibit or abolish something, and the argument supports the position stated in the topic."
+
+[map]
+field = "argument"
+instruction = "Rewrite this argument in canonical form: correct its spelling, grammar, capitalization and punctuation, and write out abbreviations and text-message spellings (for example \"u\" becomes \"you\"). Keep every other word unchanged and do not add or remove any point."

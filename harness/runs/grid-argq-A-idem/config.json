@@ -1,0 +1,23 @@
+{
+  "run": {
+    "seed": 1021201,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/argq-A"
+  },
+  "identities": {
+    "idempotence": {
+      "enabled": true,
+      "n_rows": 200
+    }
+  },
+  "grid": {
+    "kind": "idem",
+    "where": "argq-A",
+    "units": "grid/units/argq-A.json"
+  }
+}

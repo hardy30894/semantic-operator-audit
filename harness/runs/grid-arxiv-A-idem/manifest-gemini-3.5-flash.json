@@ -1,0 +1,29 @@
+{
+  "run_id": "grid-arxiv-A-idem",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 2000,
+  "backend": {
+    "provider": "openrouter",
+    "model": "google/gemini-3.5-flash",
+    "params": {
+      "max_completion_tokens": 1024,
+      "provider": {
+        "order": [
+          "google-ai-studio"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "minimal"
+      }
+    }
+  },
+  "started": 1794123768.5548193,
+  "finished": 1794123879.3083348
+}

@@ -1,0 +1,34 @@
+{
+  "run_id": "ext-placebo-abt-A",
+  "harness_version": "0.3.0",
+  "ext_design": "ext-2026-10-21.2",
+  "template_version": "2026-10-14.1",
+  "extension_template_versions": {
+    "explain": "ext-2026-10-21.explain-1",
+    "format": "ext-2026-10-21.format-1"
+  },
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 10000,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-haiku-5-5",
+    "params": {
+      "max_tokens": 1024,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "segments": [
+    "base",
+    "reword"
+  ],
+  "started": 1792654460.40296,
+  "finished": 1792654901.8792126
+}

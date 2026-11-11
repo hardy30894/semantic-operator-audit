@@ -1,0 +1,37 @@
+{
+  "run": {
+    "seed": 1021301,
+    "repeats": 5,
+    "concurrency": 16,
+    "output_dir": "runs",
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/arxiv-A"
+  },
+  "identities": {
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 200,
+      "count_batch": 10
+    }
+  },
+  "ext": {
+    "include_base": true,
+    "base_count": true,
+    "mitigations": [],
+    "segments": [
+      "reword"
+    ],
+    "reword": {
+      "p": [
+        "The paper's primary field is computer science (such as machine learning, computer vision, language processing or computer security).",
+        "Computer science (for instance machine learning, computer vision, language processing or computer security) is the main field of the paper."
+      ],
+      "pq": "The paper's primary field is computer science (such as machine learning, computer vision, language processing or computer security), and the title of the paper includes a colon.",
+      "template_style": "plain",
+      "field_order": "reversed"
+    }
+  }
+}

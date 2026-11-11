@@ -1,0 +1,19 @@
+# study-abt-B: confirmatory run (PREREGISTRATION.md §4.3). Do not edit after timestamping.
+#   python3 -m semaudit run configs/study-abt-B.toml --run-id study-abt-B --backend <arm> --yes
+include = ["models.toml"]
+
+[run]
+seed = 1018004
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/abt-B"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 200
+count_batch = 10

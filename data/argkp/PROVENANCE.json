@@ -1,0 +1,96 @@
+{
+  "source": "IBM Debater ArgKP v1 (Bar-Haim et al., ACL 2020), folder kpm_data/ of https://github.com/IBM/KPA_2021_shared_task",
+  "revision": "2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2",
+  "downloads": [
+    {
+      "file": "arguments_train.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/arguments_train.csv",
+      "sha256": "aa7eaa6b399bdc1b2b679e23185591c5bd59264234b1cba87a3c1df534db6235"
+    },
+    {
+      "file": "arguments_dev.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/arguments_dev.csv",
+      "sha256": "e06b763c41606c3290ddfa414109b3d3d47331ddd322ff5e4dfa0079ec9afb1c"
+    },
+    {
+      "file": "key_points_train.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/key_points_train.csv",
+      "sha256": "dc9625378749b8e0f85ba9d5babec7823fa4d8c6a9da5906b42f3401c7feaf60"
+    },
+    {
+      "file": "key_points_dev.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/key_points_dev.csv",
+      "sha256": "328beb1551afa445518ff97c6e6706249e470571dcdc81b72713e5c05a6ff73c"
+    },
+    {
+      "file": "labels_train.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/labels_train.csv",
+      "sha256": "e6d866cdd426f63e143e4e9aea1d33d5c3eb9f06777fc29508cf54e1810319ab"
+    },
+    {
+      "file": "labels_dev.csv",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/labels_dev.csv",
+      "sha256": "d321711a07ca449bd1fe438fcfc55bfa478d2fdf7e8b74bd7a7394f17aff7fc4"
+    },
+    {
+      "file": "readme.txt",
+      "url": "https://raw.githubusercontent.com/IBM/KPA_2021_shared_task/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/readme.txt",
+      "sha256": "fe22917afd4031591aed53c3a40d35a8f3ec24756759bcc88efde0e5f9dbd1c5"
+    }
+  ],
+  "arguments_in_source": 6515,
+  "key_points_in_source": 243,
+  "labeled_pairs_in_source": 24093,
+  "matching_pairs_in_source": 4998,
+  "topics_in_source": 28,
+  "topics_kept": 17,
+  "topics_left_out": {
+    "Assisted suicide should be a criminal offence": "sensitive: death",
+    "The vow of celibacy should be abandoned": "sensitive: religion",
+    "We should abolish capital punishment": "sensitive: death",
+    "We should abolish the right to keep and bear arms": "sensitive: weapons and violence",
+    "We should adopt atheism": "sensitive: religion",
+    "We should end affirmative action": "sensitive: ethnicity",
+    "We should legalize prostitution": "sensitive: sexuality",
+    "We should legalize sex selection": "sensitive: reproduction",
+    "We should prohibit women in combat": "sensitive: gender, weapons and violence",
+    "We should close Guantanamo Bay detention camp": "possibly sensitive (a named conflict, detention): left out to be safe",
+    "We should abandon marriage": "possibly sensitive (sexuality and gender): left out to be safe"
+  },
+  "rule": "an argument is kept if it matches exactly one key point (label 1: at least 60% of 8 annotators) and has label 0 (at most 15%) for every other key point of its topic and stance; that key point is its cluster",
+  "arguments_dropped": {
+    "topic left out": 2593,
+    "matches one key point, undecided for another": 977,
+    "matches no key point": 1042,
+    "matches two or more key points": 163
+  },
+  "records": 1740,
+  "stance": {
+    "con": 903,
+    "pro": 837
+  },
+  "split": {
+    "train": 1562,
+    "dev": 178
+  },
+  "key_points_in_kept_topics": 140,
+  "clusters": 132,
+  "clusters_with_2_or_more_records": 122,
+  "clusters_with_3_or_more_records": 110,
+  "cluster_size": {
+    "min": 1,
+    "median": 6.0,
+    "max": 77
+  },
+  "licence": "CDLA-Sharing-1.0",
+  "licence_text": "\"(c) Copyright IBM 2020. Released under Community Data License Agreement \u2013 Sharing, Version 1.0 (https://cdla.io/sharing-1-0/).\" (kpm_data/readme.txt, the ArgKP v1 release notes, under \"The dataset is released under the following licensing and copyright terms:\")",
+  "licence_url": "https://cdla.dev/sharing-1-0/",
+  "licence_sources": [
+    "https://github.com/IBM/KPA_2021_shared_task/blob/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/kpm_data/readme.txt",
+    "https://web.archive.org/web/20221230115544/https://research.ibm.com/haifa/dept/vst/debating_data.shtml (IBM's Debater datasets page: its datasets are released under CC-BY-SA \"unless specified otherwise in their release notes\"; ArgKP's release notes specify CDLA-Sharing-1.0)",
+    "https://github.com/IBM/KPA_2021_shared_task/blob/2f5e2d5ad5a387fe731da2f00b423ce1d845c5d2/LICENSE (Apache License 2.0, the repository's code licence; kpm_data/ carries its own)"
+  ],
+  "attribution": "Bar-Haim, Eden, Friedman, Kantor, Lahav and Slonim, From Arguments to Key Points: Towards Automatic Argument Summarization, ACL 2020; (c) Copyright IBM 2020. The arguments are a subset of IBM-ArgQ-Rank-30kArgs (Gretz et al., AAAI 2020).",
+  "changes": "records.csv is a modified version of the ArgKP data (Enhanced Data under CDLA-Sharing-1.0), made by harness/scripts/convert_argkp.py: 17 of the 28 topics kept; only arguments that match exactly one key point with no undecided pair kept; each argument joined with its key point; whitespace normalized; new ids; word counts and a similarity key added. A published copy must be under CDLA-Sharing-1.0 with this notice.",
+  "not_used": "test_data/ of the same repository (3 topics added in 2021, ArgKP-2021): its files carry no licence notice of their own"
+}

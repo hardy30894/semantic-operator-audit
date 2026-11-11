@@ -1,0 +1,28 @@
+{
+  "run": {
+    "seed": 1021301,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/arxiv-A"
+  },
+  "identities": {
+    "idempotence": {
+      "enabled": true,
+      "n_rows": 200
+    }
+  },
+  "grid": {
+    "kind": "idem",
+    "where": "arxiv-A",
+    "units": "grid/units/arxiv-A.json"
+  },
+  "reasoning": {
+    "model": "gpt-5.6-luna-reasoning-medium",
+    "effort": "medium",
+    "reasoning_off_side": "gpt-5.6-luna"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "run": {
+    "seed": 1018003,
+    "repeats": 5,
+    "concurrency": 16,
+    "output_dir": "runs",
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/abt-A"
+  },
+  "identities": {
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 200,
+      "count_batch": 10
+    }
+  },
+  "ext": {
+    "include_base": true,
+    "base_count": true,
+    "mitigations": [],
+    "segments": [
+      "reword"
+    ],
+    "reword": {
+      "p": [
+        "The product is an audio device (such as speakers, headphones, a receiver, an amplifier or a turntable).",
+        "The product belongs to the class of audio devices (for instance speakers, headphones, receivers, amplifiers or turntables)."
+      ],
+      "pq": "The product is an audio device (such as speakers, headphones, a receiver, an amplifier or a turntable), and it is made by Sony.",
+      "template_style": "plain",
+      "field_order": "reversed"
+    }
+  }
+}

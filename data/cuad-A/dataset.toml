@@ -1,0 +1,29 @@
+# CUAD contract clauses, predicate pair A: a clear clause type (gold) and a machine-checkable title word.
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; both p and q have a rule, so the run's design records ground truth for every claim.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "cuad-A"
+records = "../cuad/records.csv"
+text_fields = ["agreement", "clause"]
+match_claim = "Record 1 and Record 2 come from the same contract."
+
+[predicates.p]
+text = "The clause restricts a party from competing, from dealing with anyone other than the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees."
+negation = "The clause does not restrict a party from competing, from dealing with anyone other than the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees."
+fields = ["clause"]
+rule = { field = "labels", contains_any = [";Non-Compete;", ";Exclusivity;", ";No-Solicit Of Customers;", ";No-Solicit Of Employees;"] }
+
+[predicates.q]
+text = "The agreement's title contains one of the words distribution, distributor, distributorship, reseller or supply."
+negation = "The agreement's title does not contain any of the words distribution, distributor, distributorship, reseller or supply."
+fields = ["agreement"]
+rule = { field = "agreement", contains_any = ["distribut", "reseller", "supply"] }
+
+[conjunction]
+pq = "The clause restricts a party from competing, from dealing with anyone other than the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees, and the agreement's title contains one of the words distribution, distributor, distributorship, reseller or supply."
+qp = "The agreement's title contains one of the words distribution, distributor, distributorship, reseller or supply, and the clause restricts a party from competing, from dealing with anyone other than the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees."
+
+[map]
+field = "clause"
+instruction = "Rewrite this contract clause in canonical form: write numbers in digits only (for example \"thirty (30) days\" becomes \"30 days\"), remove section numbers, headings, redaction marks such as [***] and omission marks such as [...], and change text written in capital letters to sentence case. Keep every other word unchanged."

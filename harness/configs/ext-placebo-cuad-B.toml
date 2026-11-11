@@ -1,0 +1,38 @@
+# Addendum H: rewording placebos on cuad-B, with Addendum G's design minus its unknown segment and its
+# temperature-0 arm (PREREG_ADDENDUM_H.md). Same seed and data as study-cuad-B, so the 200 rows are the first 200 of
+# study-cuad-B's rows. Segments, interleaved in one seeded order (extension/placebo_segments.py):
+#   base     semaudit's p, not_p, q, p_and_q and q_and_p requests (no COUNT: base_count = false)
+#   reword   p in two paraphrases, in the plain template (no field order: the filter shows one field); p and q in a paraphrase
+# Arms: haiku-5.5, gpt-5.6-luna and gemini-3.5-flash-lite, one process each.
+#   python3 -m extension run configs/ext-placebo-cuad-B.toml --run-id ext-placebo-cuad-B --backend haiku-5.5 --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-cuad-B.toml --run-id ext-placebo-cuad-B --backend gpt-5.6-luna --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-cuad-B.toml --run-id ext-placebo-cuad-B --backend gemini-3.5-flash-lite --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension placebo runs/ext-placebo-cuad-B --n-perm 10000 --n-boot 10000
+include = ["models-v2.toml"]
+
+[run]
+seed = 1021102
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/cuad-B"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 200
+
+[ext]
+include_base = true
+base_count = false
+mitigations = []
+segments = ["reword"]
+
+[ext.reword]
+p = ["The clause deals with a license to intellectual property or the ownership of intellectual property (for instance granting, limiting or extending a trademark or software license, or assigning inventions).", "A license to intellectual property or the ownership of intellectual property (for example granting, limiting or extending a trademark or software license, or assigning inventions) is dealt with in the clause."]
+pq = "The clause deals with a license to intellectual property or the ownership of intellectual property (for instance granting, limiting or extending a trademark or software license, or assigning inventions), and the clause restricts a party from assigning or transferring the agreement, its rights or a license granted under it, including through sublicensing (for instance by requiring the other party's consent)."
+template_style = "plain"
+field_order = "reversed"

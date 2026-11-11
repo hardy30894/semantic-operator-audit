@@ -1,0 +1,439 @@
+{
+  "source": "arXiv API (https://export.arxiv.org/api/query), one query per category and year, fetched by harness/scripts/fetch_arxiv.py",
+  "queries": 68,
+  "fetched_utc": [
+    "2026-10-21T05:26:24Z",
+    "2026-10-21T05:31:19Z"
+  ],
+  "downloads": [
+    {
+      "file": "queries.json",
+      "url": "written by fetch_arxiv.py (query manifest)",
+      "sha256": "36aabe969f33af48036bdfef8b72e98a3b99124d8245ee331b6a7ef1c9a0f377"
+    },
+    {
+      "file": "cs.LG_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.LG+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "98662441a91fc3ed0af1079e3388ebe12a57771aaee923f4d5981d116816d2fd",
+      "entries": 25
+    },
+    {
+      "file": "cs.LG_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.LG+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "0c3b2078ceccbb8ad78ab07dd34a1bb2ff45518bb7aa9f17134cbd1042c1bc5d",
+      "entries": 25
+    },
+    {
+      "file": "cs.LG_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.LG+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "32a5bfe2d18a2bb2cd22f319607e64d4cc1582e58abac7904e941861fd8c8fcd",
+      "entries": 25
+    },
+    {
+      "file": "cs.LG_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.LG+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "1d55e371773d3d297354edb4284157ca5755b59ac2432bca0886762ac4bf3e34",
+      "entries": 25
+    },
+    {
+      "file": "cs.CL_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CL+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "ee2e133c076e3205fef247400836ba989b84eaf12596745b14b51c61c30ba93f",
+      "entries": 25
+    },
+    {
+      "file": "cs.CL_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CL+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "340dc3e8434a33e2f74228fa1d4b7f2f47a1b643b5e136108fbfd0b9b71f7864",
+      "entries": 25
+    },
+    {
+      "file": "cs.CL_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CL+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "88b65458dbc46d100c753183d297a8cd11f7f97ee9729918de6b1ef98cd529f2",
+      "entries": 25
+    },
+    {
+      "file": "cs.CL_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CL+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "4b00b029df386f60b4aded166da6feab68a3ab9a2ef6085a3d1bb4ba94023334",
+      "entries": 25
+    },
+    {
+      "file": "cs.CV_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "a587b6cdc87739aa55ae371d99768ef86f5c06151881264e510bb3fd7b03d7a5",
+      "entries": 25
+    },
+    {
+      "file": "cs.CV_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "3d8f58e943f60f3107497180bb808a78240acf422b26b4f75a2d77f14af74924",
+      "entries": 25
+    },
+    {
+      "file": "cs.CV_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "ea9fbf4fbf15b64f4e1f195d48f6117832ab6f740212dda235a277d6ae85f27a",
+      "entries": 25
+    },
+    {
+      "file": "cs.CV_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "9fae288fe4e334576689610f048d1bba7fbc12d5618a656dd4451255d217b65d",
+      "entries": 25
+    },
+    {
+      "file": "cs.CR_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CR+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "292a7f4e77dc235c93b294bdbe79becaea8428bb96dfcc01792b8a2387f1f279",
+      "entries": 25
+    },
+    {
+      "file": "cs.CR_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CR+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "c51c0d419c6f11fb06cf62390eef92f8c83287e77a3506bdc8285b608f20a0e9",
+      "entries": 25
+    },
+    {
+      "file": "cs.CR_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CR+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "5683cc51f6867f4ae8a14ed8545f1b126095cce1e8d88c6b2e48e3c08b7012aa",
+      "entries": 25
+    },
+    {
+      "file": "cs.CR_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.CR+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "a226e9f768db4f8832055627de9b0fe3f1a96653af9f82aa4759f2bc2a32aca0",
+      "entries": 25
+    },
+    {
+      "file": "math.PR_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.PR+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "6e5a424f02bb1f16f916df92feac855b7ceda916e144f7c2372bcad9120503b4",
+      "entries": 25
+    },
+    {
+      "file": "math.PR_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.PR+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "45459676e8a336a5197b646f45e052588727fa884ba928475463283c32cebd70",
+      "entries": 25
+    },
+    {
+      "file": "math.PR_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.PR+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "936501ff9b7ada1182adb12fe0ece75fdcb5516a2bd6cac6b2fdf8f12e448d57",
+      "entries": 25
+    },
+    {
+      "file": "math.PR_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.PR+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "b89c947441fc0b3d7bc070a621ba9824b410a1ec9393752192c6c7cafeceb030",
+      "entries": 25
+    },
+    {
+      "file": "math.NT_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.NT+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "8e9609555e4c7946e4a0d4bcdf56c3127387c21a5452fadf77e5be962a611e50",
+      "entries": 25
+    },
+    {
+      "file": "math.NT_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.NT+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "87213dc47fa20d3f7ca1b5b5565ec5ec4768d791e192d68be9efdb40bb3313b8",
+      "entries": 25
+    },
+    {
+      "file": "math.NT_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.NT+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "fd7d171d6837c4b6f67328cadd3129139fe1a3767e350dd5a2f7eb2594b94fc7",
+      "entries": 25
+    },
+    {
+      "file": "math.NT_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.NT+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "69bd5e1ee369f0ac062092d874bc6b31192bbf1b3ed7b81f60a8a0e755845363",
+      "entries": 25
+    },
+    {
+      "file": "math.AP_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.AP+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "c90135006e14d5a56ee644006b945ba0486ac6b8f1a5cd118f30e652453665dc",
+      "entries": 25
+    },
+    {
+      "file": "math.AP_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.AP+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "149c90a49b4888910038efcf954de9d79120012144b32ab9b54dbe33c992c72b",
+      "entries": 25
+    },
+    {
+      "file": "math.AP_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.AP+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "39ca4619d97c0f6a1317590f1f1e5a6c9a9614aaed33c4fddc38cdad726d0687",
+      "entries": 25
+    },
+    {
+      "file": "math.AP_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Amath.AP+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "25bf9a6cb2e5351c30f2143f79bfc26b66180ccb6026a6e5d7cf0d4b144ac644",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.GA_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.GA+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "1e4cfe4aed3dc3c3f53ea5bbbf08a730f5570e80e7198ae02ccef833aa937cb6",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.GA_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.GA+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "70fc8b012be1d1934e0acbaa4b8e6cebe270b371729057ff5ce31fd740fd7c36",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.GA_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.GA+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "1ac072f1dbf907b8e7a987b18ec66d6df5184460e4fb2f37c0825fac350f924e",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.GA_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.GA+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "9f2f67106e9ce96a2746ad878716db83a44126833ebfca955f7754d21d368d42",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.EP_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.EP+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "c61de42f18c3d71e245dac942a2973849a5eb0b9adc958987ab534983c00703a",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.EP_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.EP+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "5ecf9a8c8fd36772793c8ce53566a4488c1e05a977f870513a703f1adaefa261",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.EP_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.EP+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "78ad5c0728486b9ffa80f6e4513302d438f4c27eb8794054bfe63ec8fc4fcf7f",
+      "entries": 25
+    },
+    {
+      "file": "astro-ph.EP_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aastro-ph.EP+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "b1e816958c56c8eedfbc8fd2fcdfa610001550b6901250966c9a4145b511ac1c",
+      "entries": 25
+    },
+    {
+      "file": "cond-mat.mtrl-sci_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "8586c4ab57a68b89081843be4af37667350fa1c64aa256fce37ab906b9f11514",
+      "entries": 25
+    },
+    {
+      "file": "cond-mat.mtrl-sci_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "1c7b5b2c06790a6c20b0a29dd2d3815d6f9c6fade4527cdb1a5d1e9e1fe286ea",
+      "entries": 25
+    },
+    {
+      "file": "cond-mat.mtrl-sci_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "2726e48541d329e0c2e01a6fd8c9f1dfc74e18828dff3eaa7b4953bee92a9a2e",
+      "entries": 25
+    },
+    {
+      "file": "cond-mat.mtrl-sci_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "0bdfbbcbaa225add4341cce2abd5fd83b0635dc342eb19e2e0e251dffde98f64",
+      "entries": 25
+    },
+    {
+      "file": "quant-ph_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aquant-ph+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "d0db7d2ab85dde67ec5e03a1d734d06e017ec7722e34f9f9f48be821f5e5f1cc",
+      "entries": 25
+    },
+    {
+      "file": "quant-ph_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aquant-ph+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "5af497a6e6f304ccb1610ef3a8e394f19b9b5da7a85117e58f4cb9de61fc7899",
+      "entries": 25
+    },
+    {
+      "file": "quant-ph_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aquant-ph+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "84ce50bc594136e546290e836b4cca792f569bd465f7f0264a48dea20f1c9349",
+      "entries": 25
+    },
+    {
+      "file": "quant-ph_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aquant-ph+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "affd4f9f716afb93ce5d43ffc95dbc396adfd103de8c55be8a80e940f621b82b",
+      "entries": 25
+    },
+    {
+      "file": "physics.ao-ph_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aphysics.ao-ph+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "4517823d167625c793cfc556bfba76f424e456b24c8af6bf4a16c53b26a6023b",
+      "entries": 21
+    },
+    {
+      "file": "physics.ao-ph_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aphysics.ao-ph+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "946eb6a8201ade8295994f6719b01bcf51d23e34b72e6cbd4b66053dfd8095f9",
+      "entries": 25
+    },
+    {
+      "file": "physics.ao-ph_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aphysics.ao-ph+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "a35e0a1b53203ea395b166f3666326b08235c7969949e411983e8f8adcc5fbe4",
+      "entries": 25
+    },
+    {
+      "file": "physics.ao-ph_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aphysics.ao-ph+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "9a3686d2bc9d170719c1e7b3b9f23443d2d4c32974a99cea9a05dcfc8406ba0d",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.PE_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.PE+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "758a543f1f721901f729a505be086b4b87999edc822fd27a0dabe612ca191fc1",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.PE_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.PE+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "867a0a503b6ef7bca4286546d6c26cbc14ca61a6273cfa036c57632386e09b89",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.PE_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.PE+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "fc5c9612be5e32c8ef4a2ef446658665a20eb5b34bc5a9a700ebcabbb75e68ec",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.PE_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.PE+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "bc4fc5ebaf8c0ff88f1e5c23e5bf3656f36d0ea139b0813a7b1b570790bacc27",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.NC_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.NC+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "b08dedba78df10927f41f54e6bf3ced3681e43ca8bc56dd1066216ff11298c7b",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.NC_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.NC+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "a5d2c14fc73a8c4104067730cae5507cddfcc7613509cdcd7f2d025385f929d7",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.NC_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.NC+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "c903842753348a28019a79b04b31e4dc7093959a1c4f5819d6934ee0f49be98b",
+      "entries": 25
+    },
+    {
+      "file": "q-bio.NC_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-bio.NC+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "22a04c947ab55ea2cdce14d2116676da31b25bd01cc411e862f710009bdd6777",
+      "entries": 25
+    },
+    {
+      "file": "econ.EM_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aecon.EM+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "8ab9409d500ec18babafe0c2bdeca1e13fb8f8811655b13abdb518007d31910e",
+      "entries": 25
+    },
+    {
+      "file": "econ.EM_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aecon.EM+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "64cc9f96abe69018fedd3fa959b396e9dd400546faff7c221aecd0be573fe186",
+      "entries": 25
+    },
+    {
+      "file": "econ.EM_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aecon.EM+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "19bb5a9bcd83ce20232813e480e327338d97225cf2d894e2f65a54f5564db835",
+      "entries": 25
+    },
+    {
+      "file": "econ.EM_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aecon.EM+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "add053cc7ff35c1b66dad610930f580515ec9367cb4b5147119515cd3dedc9af",
+      "entries": 25
+    },
+    {
+      "file": "q-fin.ST_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-fin.ST+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "cb25133f63e03213553ab2e34c23fa7903278accf9d56c6c4d4e5d0d81b07674",
+      "entries": 19
+    },
+    {
+      "file": "q-fin.ST_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-fin.ST+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "f29a3b6c53a9b30d0426a017f923ca8a892a8cbe61f313489119930b01eaa648",
+      "entries": 25
+    },
+    {
+      "file": "q-fin.ST_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-fin.ST+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "d6b8b15f58925ee3df519688e035dcf047a4c8175974291896d46552c475c30a",
+      "entries": 20
+    },
+    {
+      "file": "q-fin.ST_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Aq-fin.ST+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "b53ea4606a85ba5feb9ad258734e31035699e0f3985a7e8bd4896d75670b2653",
+      "entries": 25
+    },
+    {
+      "file": "stat.ME_2018.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Astat.ME+AND+submittedDate%3A%5B201803010000+TO+201803312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "afab3080920595b1bbb72aec01a70a6c83f8f23a7d1e33ad00d2d7647bee6fc7",
+      "entries": 25
+    },
+    {
+      "file": "stat.ME_2020.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Astat.ME+AND+submittedDate%3A%5B202003010000+TO+202003312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "dc30eab208cca2a6bb9a634a477f72c8f640086abcc0bcbadecde15d6f7c2100",
+      "entries": 25
+    },
+    {
+      "file": "stat.ME_2022.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Astat.ME+AND+submittedDate%3A%5B202203010000+TO+202203312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "dd4dc12b57058eef10e15c399c549659045494f7acdc6ae42e536601e7129283",
+      "entries": 25
+    },
+    {
+      "file": "stat.ME_2024.xml",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Astat.ME+AND+submittedDate%3A%5B202403010000+TO+202403312359%5D&start=0&max_results=25&sortBy=submittedDate&sortOrder=ascending",
+      "sha256": "85433fb759ad25b6b73fd88c93c935bd0f5d0d44b48deb40f8c829106b74c69c",
+      "entries": 25
+    }
+  ],
+  "entries_returned": 1685,
+  "distinct_papers": 1608,
+  "dropped_ambiguous_primary": 78,
+  "records": 1530,
+  "max_abstract_chars": 2000,
+  "fields_not_read": [
+    "authors",
+    "comments",
+    "journal references",
+    "DOIs",
+    "links"
+  ],
+  "licence": "CC0 1.0 (descriptive metadata)",
+  "licence_text": "\"You are free to use descriptive metadata about arXiv e-prints\" under the CC0 1.0 Public Domain Declaration; the terms define descriptive metadata to include title, abstract, authors, identifiers and classification terms (arXiv API Terms of Use). The e-prints themselves (PDFs, sources) are not covered and are not used.",
+  "licence_url": "https://info.arxiv.org/help/api/tou.html",
+  "attribution": "Metadata courtesy of arXiv.org (not required under CC0)."
+}

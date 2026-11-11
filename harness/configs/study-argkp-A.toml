@@ -1,0 +1,31 @@
+# study-argkp-A: the matching identities on debate arguments (IBM ArgKP), outside product data. Not pre-registered;
+# checked offline only, no paid run yet. extension/data/DATASETS-v3.md describes the data and the offline checks.
+#   python3 -m extension plan configs/study-argkp-A.toml
+#   python3 -m extension.cli run configs/study-argkp-A.toml --run-id study-argkp-A --backend <arm> --max-cost-factor 2 --yes
+# The gold entity is the key point an argument matches. Symmetry (H1) and transitivity: 40 disjoint blocks of six
+# arguments, three of one key point and the three most similar arguments of other key points, every pair in both
+# orders (600 pairs, 800 triangles). Placement (H5, S5): 120 tuples of two arguments of one key point, at most one
+# per key point (122 key points have two or more). The filter algebra, batching and idempotence already run on
+# ArgQ arguments (study-argq-A to E), so they are off here.
+include = ["models-v2.toml"]
+
+[run]
+seed = 1022401
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/argkp-A"
+
+[identities.symmetry]
+enabled = true
+n_blocks = 40
+block_size = 6
+positives = 3
+
+[identities.placement]
+enabled = true
+n_tuples = 120

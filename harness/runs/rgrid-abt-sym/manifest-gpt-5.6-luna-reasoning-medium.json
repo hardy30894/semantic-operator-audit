@@ -1,0 +1,29 @@
+{
+  "run_id": "rgrid-abt-sym",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 2000,
+  "backend": {
+    "provider": "openrouter",
+    "model": "openai/gpt-5.6-luna",
+    "params": {
+      "max_completion_tokens": 4096,
+      "provider": {
+        "order": [
+          "openai"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "medium"
+      }
+    }
+  },
+  "started": 1794204504.908339,
+  "finished": 1794204504.9264781
+}

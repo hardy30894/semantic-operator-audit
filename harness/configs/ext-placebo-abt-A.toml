@@ -1,0 +1,38 @@
+# Addendum H: rewording placebos on abt-A, with Addendum G's design minus its unknown segment and its
+# temperature-0 arm (PREREG_ADDENDUM_H.md). Same seed and data as study-abt-A, so the 200 rows are the first 200 of
+# study-abt-A's rows. Segments, interleaved in one seeded order (extension/placebo_segments.py):
+#   base     semaudit's p, not_p, q, p_and_q and q_and_p requests (no COUNT: base_count = false)
+#   reword   p in two paraphrases, in the plain template and with the record's fields reversed; p and q in a paraphrase
+# Arms: haiku-5.5, gpt-5.6-luna and gemini-3.5-flash-lite, one process each.
+#   python3 -m extension run configs/ext-placebo-abt-A.toml --run-id ext-placebo-abt-A --backend haiku-5.5 --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-abt-A.toml --run-id ext-placebo-abt-A --backend gpt-5.6-luna --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-abt-A.toml --run-id ext-placebo-abt-A --backend gemini-3.5-flash-lite --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension placebo runs/ext-placebo-abt-A --n-perm 10000 --n-boot 10000
+include = ["models-v2.toml"]
+
+[run]
+seed = 1018003
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/abt-A"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 200
+
+[ext]
+include_base = true
+base_count = false
+mitigations = []
+segments = ["reword"]
+
+[ext.reword]
+p = ["The product is an audio device (such as speakers, headphones, a receiver, an amplifier or a turntable).", "The product belongs to the class of audio devices (for instance speakers, headphones, receivers, amplifiers or turntables)."]
+pq = "The product is an audio device (such as speakers, headphones, a receiver, an amplifier or a turntable), and it is made by Sony."
+template_style = "plain"
+field_order = "reversed"

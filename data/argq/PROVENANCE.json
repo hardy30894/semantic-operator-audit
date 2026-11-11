@@ -1,0 +1,38 @@
+{
+  "source": "IBM Debater IBM-ArgQ-Rank-30kArgs (Gretz et al., AAAI 2020), https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k",
+  "downloads": [
+    {
+      "file": "train.csv",
+      "url": "https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k/resolve/590726b3765b1b90c5e53a17e3b1f77d92d3aa8a/train.csv",
+      "sha256": "55910fd3599ec54c088d4e9c55f745ff814d153f13c1a7c23a4d31f167cf16f7"
+    },
+    {
+      "file": "dev.csv",
+      "url": "https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k/resolve/590726b3765b1b90c5e53a17e3b1f77d92d3aa8a/dev.csv",
+      "sha256": "067008db955c34d508008bedce4884a07988ff758cef2bcd6584f2857944cfd1"
+    },
+    {
+      "file": "test.csv",
+      "url": "https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k/resolve/590726b3765b1b90c5e53a17e3b1f77d92d3aa8a/test.csv",
+      "sha256": "18c0f0491e0206558f24dbe79b91901bd662e5ec2b1bd9d13ab740660b0c196f"
+    },
+    {
+      "file": "README.md",
+      "url": "https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k/resolve/590726b3765b1b90c5e53a17e3b1f77d92d3aa8a/README.md",
+      "sha256": "fc84df32b27dd27d62c1daa2fd8716ccb66b8ed7e13130a77a28e2a52b5eb700"
+    }
+  ],
+  "arguments_in_source": 30497,
+  "topics_kept": 39,
+  "ban_topics": 19,
+  "min_stance_conf": 0.999,
+  "records": 11904,
+  "licence": "CC BY-SA 3.0",
+  "licence_text": "\"Released under CC-BY-SA 3.0\" (dataset card README.md, section Licensing Information, after a copyright line for IBM 2014). The IBM Debater datasets page states the datasets are \"Released under CC-BY-SA\" and asks that every copy or modified version carry a notice saying so, with a link to http://creativecommons.org/licenses/by-sa/3.0/.",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "licence_sources": [
+    "https://huggingface.co/datasets/ibm-research/argument_quality_ranking_30k (README.md, revision 590726b3765b1b90c5e53a17e3b1f77d92d3aa8a; its metadata header says cc-by-3.0, its licensing section CC-BY-SA 3.0; the stricter CC BY-SA 3.0 is applied)",
+    "https://web.archive.org/web/20221230115544/https://research.ibm.com/haifa/dept/vst/debating_data.shtml"
+  ],
+  "attribution": "Gretz, Friedman, Cohen-Karlik, Toledo, Lahav, Aharonov and Slonim, A Large-scale Dataset for Argument Quality Ranking: Construction and Analysis, AAAI 2020; IBM Research. This records.csv is a modified version (topic and stance-agreement filter, added word counts) and is released under CC BY-SA 3.0."
+}

@@ -1,0 +1,62 @@
+{
+  "run": {
+    "seed": 1018001,
+    "repeats": 5,
+    "concurrency": 16,
+    "output_dir": "runs",
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/wdc-A"
+  },
+  "identities": {
+    "symmetry": {
+      "enabled": true,
+      "n_blocks": 40,
+      "block_size": 6,
+      "positives": 3
+    },
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 300,
+      "count_batch": 10
+    },
+    "batch": {
+      "enabled": true,
+      "n_rows": 300,
+      "batch_size": 10
+    },
+    "idempotence": {
+      "enabled": true,
+      "n_rows": 200
+    }
+  },
+  "backends": [
+    {
+      "name": "sonnet-5.5",
+      "kind": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "params": {
+        "max_tokens": 1024,
+        "thinking": "between_tools"
+      },
+      "price_in_per_mtok": 2.0,
+      "price_out_per_mtok": 10.0,
+      "measured_usd_per_1k_calls": 0.66
+    },
+    {
+      "name": "gpt-5.6-terra",
+      "kind": "openrouter",
+      "model": "openai/gpt-5.6-terra",
+      "params": {
+        "upstream": "openai",
+        "reasoning_effort": "none",
+        "max_tokens": 1024
+      },
+      "price_in_per_mtok": 2.0,
+      "price_out_per_mtok": 12.0,
+      "measured_usd_per_1k_calls": 0.49
+    }
+  ]
+}

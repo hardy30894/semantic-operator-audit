@@ -1,0 +1,29 @@
+# IBM ArgQ arguments, predicate pair B: a judgment-laden quality predicate (crowd gold) and stance (gold).
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; both p and q have a rule, so the run's design records ground truth for every claim.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "argq-B"
+records = "../argq/records.csv"
+text_fields = ["topic", "argument"]
+match_claim = "Record 1 and Record 2 make the same argument."
+
+[predicates.p]
+text = "A person preparing a speech for this side of the debate would use the argument as it is, whatever their own opinion."
+negation = "A person preparing a speech for this side of the debate would not use the argument as it is, whatever their own opinion."
+fields = ["topic", "argument"]
+rule = { field = "wa", gt = 0.9 }
+
+[predicates.q]
+text = "The argument supports the position stated in the topic."
+negation = "The argument does not support the position stated in the topic."
+fields = ["topic", "argument"]
+rule = { field = "stance", equals = "pro" }
+
+[conjunction]
+pq = "A person preparing a speech for this side of the debate would use the argument as it is, whatever their own opinion, and the argument supports the position stated in the topic."
+qp = "The argument supports the position stated in the topic, and a person preparing a speech for this side of the debate would use the argument as it is, whatever their own opinion."
+
+[map]
+field = "argument"
+instruction = "Rewrite this argument in canonical form: correct its spelling, grammar, capitalization and punctuation, and write out abbreviations and text-message spellings (for example \"u\" becomes \"you\"). Keep every other word unchanged and do not add or remove any point."

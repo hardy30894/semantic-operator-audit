@@ -1,0 +1,29 @@
+{
+  "run_id": "grid-cuad-A-idem",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 2000,
+  "backend": {
+    "provider": "openrouter",
+    "model": "openai/gpt-5.6-terra",
+    "params": {
+      "max_completion_tokens": 1024,
+      "provider": {
+        "order": [
+          "openai"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "effort": "none"
+      }
+    }
+  },
+  "started": 1794125290.5264423,
+  "finished": 1794125498.5637095
+}

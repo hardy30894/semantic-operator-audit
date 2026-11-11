@@ -1,0 +1,18 @@
+{
+  "run": {
+    "seed": 1022401,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/argkp-A"
+  },
+  "identities": {},
+  "grid": {
+    "kind": "sym",
+    "where": "argkp",
+    "units": "grid/units/match-argkp.json"
+  }
+}

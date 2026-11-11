@@ -1,0 +1,55 @@
+# Model roster, shared by the pilot and study configs (copy the [[backends]] tables you need).
+# Every model goes through OpenRouter pinned to a single host with fallbacks disabled (the model's
+# maker where it serves the model; Google Vertex for DeepSeek), so routing across hosts cannot add
+# serving-stack variance. max_tokens is 1024 for every arm: in the pilot only Haiku reached its former
+# 256-token cap (4 COUNT replies). Prices are OpenRouter list prices per million tokens (2026-10-13),
+# used only for the plan's cost estimate; actual cost is logged per call.
+#
+# Primary arms: budget-tier operators from three providers, the tier production AI SQL functions use.
+# Contrast arm: greedy decoding with a fixed seed and logprobs.
+
+[[backends]]
+name = "haiku-5.5"
+kind = "openrouter"
+model = "anthropic/claude-haiku-5.5"
+params = { upstream = "anthropic", reasoning_effort = "none", max_tokens = 1024 }
+price_in_per_mtok = 0.10
+price_out_per_mtok = 0.50
+measured_usd_per_1k_calls = 0.033  # pilot, 2026-10-13
+
+[[backends]]
+name = "gpt-5.6-luna"
+kind = "openrouter"
+model = "openai/gpt-5.6-luna"
+params = { upstream = "openai", reasoning_effort = "none", max_tokens = 1024 }
+price_in_per_mtok = 0.20
+price_out_per_mtok = 1.20
+measured_usd_per_1k_calls = 0.049  # pilot, 2026-10-13
+
+[[backends]]
+name = "gemini-3.5-flash-lite"
+kind = "openrouter"
+model = "google/gemini-3.5-flash-lite"
+params = { upstream = "google-ai-studio", reasoning_effort = "minimal", max_tokens = 1024 }
+price_in_per_mtok = 0.30
+price_out_per_mtok = 2.50
+measured_usd_per_1k_calls = 0.075  # pilot, 2026-10-13 (no thinking tokens at "minimal")
+
+[[backends]]
+name = "qwen-3.7-flash-t0"
+kind = "openrouter"
+model = "qwen/qwen3.7-flash"
+params = { upstream = "alibaba", reasoning_effort = "none", temperature = 0.0, seed = 20261014, top_logprobs = 5, max_tokens = 1024 }
+price_in_per_mtok = 0.03
+price_out_per_mtok = 0.13
+measured_usd_per_1k_calls = 0.007  # pilot, 2026-10-13
+
+# Contrast arm: a much larger open-weight model at budget price, in place of an expensive frontier
+# model (expensive models such as Claude Opus are excluded by decision of 2026-10-14).
+[[backends]]
+name = "deepseek-v3.2"
+kind = "openrouter"
+model = "deepseek/deepseek-v3.2"
+params = { upstream = "google-vertex", reasoning_effort = "none", max_tokens = 1024 }
+price_in_per_mtok = 0.56
+price_out_per_mtok = 1.68

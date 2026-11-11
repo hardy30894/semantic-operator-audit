@@ -1,0 +1,29 @@
+{
+  "run": {
+    "seed": 1021201,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/argq-A"
+  },
+  "identities": {
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 200,
+      "count_batch": 10
+    }
+  },
+  "grid": {
+    "kind": "logic",
+    "where": "argq-A",
+    "units": "grid/units/argq-A.json"
+  },
+  "reasoning": {
+    "model": "gpt-5.6-luna-reasoning-medium",
+    "effort": "medium",
+    "reasoning_off_side": "gpt-5.6-luna"
+  }
+}

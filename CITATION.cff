@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Do Semantic Operators Survive Query Rewriting? A Noise-Calibrated Audit of LLM-Powered Query Processing"
+abstract: >-
+  SQL guarantees that logically equivalent queries return the same result.
+  Asking for products that are not laptops is the same as removing the
+  laptops from all products. Semantic operators let a large language model
+  (LLM) decide, for each record, whether a condition such as "the product is
+  a laptop" is true and it is unclear whether the guarantee still holds. It
+  is hard to test because an LLM can answer the same request differently on
+  each run, so equivalent queries disagree even when nothing is wrong. We
+  compare how much two equivalent queries disagree with each other against
+  how much one query disagrees with itself when repeated. The difference
+  which we call excess divergence needs no labeled data and is zero in
+  expectation for interchangeable queries. We introduce a benchmark of seven
+  core identities and four extensions of them, each a pair of equivalent
+  queries built on six existing datasets from four domains. We run it on
+  seven LLMs in a study of approximately 0.9 million LLM calls and nearly
+  every identity is violated for nearly every LLM. For example, for the
+  negation identity where the query asks for the opposite condition and
+  flips the answer, the root-mean-square change in the probability that the
+  LLM judges a condition to be true is 0.16 to 0.37 depending on the model.
+  Similarly, for the symmetry identity where the query asks whether two
+  records describe the same item and the order of the two records is
+  swapped, it ranges from 0.15 to 0.21. When we switch reasoning on for
+  three of the LLMs, they still violate nearly every identity, although most
+  violations become smaller for the two that actually reason.
+authors:
+  - family-names: "Dubey"
+    given-names: "Harsh"
+    email: "hd2225@nyu.edu"
+    affiliation: "New York University"
+  - family-names: "Vatsal"
+    given-names: "Shubham"
+    email: "sv2128@nyu.edu"
+    affiliation: "New York University"
+version: "1.0.0"
+date-released: "2026-11-11"
+license: MIT
+repository-code: "https://github.com/hardy30894/semantic-operator-audit"
+keywords:
+  - semantic operators
+  - large language models
+  - query rewriting
+  - query processing
+  - metamorphic testing
+  - benchmark

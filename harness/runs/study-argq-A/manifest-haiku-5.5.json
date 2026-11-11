@@ -1,0 +1,25 @@
+{
+  "run_id": "study-argq-A",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 11600,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-haiku-5-5",
+    "params": {
+      "max_tokens": 1024,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "started": 1792567011.1957104,
+  "finished": 1792567709.7083623
+}

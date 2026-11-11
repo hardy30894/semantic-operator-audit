@@ -1,0 +1,28 @@
+{
+  "run": {
+    "seed": 1022401,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/argkp-A"
+  },
+  "identities": {
+    "placement": {
+      "enabled": true,
+      "n_tuples": 120
+    }
+  },
+  "grid": {
+    "kind": "place",
+    "where": "argkp",
+    "units": "grid/units/match-argkp.json"
+  },
+  "reasoning": {
+    "model": "gpt-5.6-luna-reasoning-medium",
+    "effort": "medium",
+    "reasoning_off_side": "gpt-5.6-luna"
+  }
+}

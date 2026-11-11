@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+data/wdc-products/records.csv
+data/abt-buy/records.csv
+
+# The openly licensed records of Addenda B and E, published with their license notices
+!data/cuad/records.csv
+!data/argq/records.csv
+!data/arxiv/records.csv
+!data/argkp/records.csv

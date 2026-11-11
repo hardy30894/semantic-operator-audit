@@ -1,0 +1,23 @@
+# Abt-Buy electronics, predicate pair A. Abt records are the left side of the placement join.
+name = "abt-A"
+records = "../abt-buy/records.csv"
+text_fields = ["title", "description", "price"]
+match_claim = "Record 1 and Record 2 refer to the same real-world product."
+
+[predicates.p]
+text = "The product is an audio device (for example speakers, headphones, a receiver, an amplifier or a turntable)."
+negation = "The product is not an audio device (for example speakers, headphones, a receiver, an amplifier or a turntable)."
+fields = ["title", "description"]
+
+[predicates.q]
+text = "The product is made by Sony."
+negation = "The product is not made by Sony."
+fields = ["title", "description"]
+
+[conjunction]
+pq = "The product is an audio device (for example speakers, headphones, a receiver, an amplifier or a turntable), and it is made by Sony."
+qp = "The product is made by Sony, and it is an audio device (for example speakers, headphones, a receiver, an amplifier or a turntable)."
+
+[map]
+field = "title"
+instruction = "Rewrite this product title in canonical form: the brand name, then the product line and model or part number, then the most important specification, separated by single spaces. Remove colors, marketing words, shop names and punctuation, and write it in English."

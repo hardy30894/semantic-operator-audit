@@ -1,0 +1,10 @@
+{
+  "source": "WDC Products, https://webdatacommons.org/largescaleproductcorpus/wdc-products/",
+  "archive": "80multi.zip",
+  "file": "wdcproductsmulti80cc20rnd000un_train_large.json.gz",
+  "sha256": "152ee17e30c2488bb6b87bd3e9e6fdd4e3f47a5f1181449f47c0c60ff5d24dde",
+  "records": 2841,
+  "clusters": 500,
+  "max_description_chars": 300,
+  "licence": "not stated on the download page; cite the WDC Products paper and do not redistribute"
+}

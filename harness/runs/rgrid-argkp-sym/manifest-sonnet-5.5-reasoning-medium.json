@@ -1,0 +1,26 @@
+{
+  "run_id": "rgrid-argkp-sym",
+  "harness_version": "0.3.0",
+  "template_version": "2026-10-14.1",
+  "packages": {
+    "anthropic": "0.116.0",
+    "openai": "2.32.0",
+    "numpy": "1.26.4"
+  },
+  "stage1_tasks": 2000,
+  "backend": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "params": {
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "adaptive"
+      },
+      "output_config": {
+        "effort": "medium"
+      }
+    }
+  },
+  "started": 1794201782.3573492,
+  "finished": 1794201986.9886122
+}

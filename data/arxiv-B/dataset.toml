@@ -1,0 +1,28 @@
+# arXiv abstracts, predicate pair B: a main field (gold) and a judgment-laden predicate (no gold).
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; only one predicate has a rule, so no ground truth is recorded.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "arxiv-B"
+records = "../arxiv/records.csv"
+text_fields = ["title", "abstract", "submitted"]
+match_claim = "Record 1 and Record 2 describe the same paper."
+
+[predicates.p]
+text = "The paper's main field is physics or astronomy (for example astrophysics, materials science, quantum physics or atmospheric physics)."
+negation = "The paper's main field is not physics or astronomy (for example astrophysics, materials science, quantum physics or atmospheric physics)."
+fields = ["title", "abstract"]
+rule = { field = "primary_group", equals = "physics" }
+
+[predicates.q]
+text = "The paper is mainly theoretical (its results are proved or derived mathematically, not obtained from experiments, observations, simulations or data)."
+negation = "The paper is not mainly theoretical (its results are proved or derived mathematically, not obtained from experiments, observations, simulations or data)."
+fields = ["title", "abstract"]
+
+[conjunction]
+pq = "The paper's main field is physics or astronomy (for example astrophysics, materials science, quantum physics or atmospheric physics), and the paper is mainly theoretical (its results are proved or derived mathematically, not obtained from experiments, observations, simulations or data)."
+qp = "The paper is mainly theoretical (its results are proved or derived mathematically, not obtained from experiments, observations, simulations or data), and the paper's main field is physics or astronomy (for example astrophysics, materials science, quantum physics or atmospheric physics)."
+
+[map]
+field = "title"
+instruction = "Rewrite this paper title in canonical form: sentence case (capitalize only the first word, the first word after a colon, proper nouns and acronyms), LaTeX markup replaced by plain text (for example $\\alpha$ becomes alpha), and no trailing period. Keep every other word unchanged."

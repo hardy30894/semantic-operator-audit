@@ -1,0 +1,29 @@
+# arXiv abstracts, predicate pair A: a main field (gold) and a machine-checkable title test.
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS.md.
+# Rules read hidden gold columns of records.csv that are never shown to models; both p and q have a rule, so the run's design records ground truth for every claim.
+# The records have no cluster column, so the matching identities (symmetry, placement) do not apply;
+# match_claim is set only because the loader requires it.
+name = "arxiv-A"
+records = "../arxiv/records.csv"
+text_fields = ["title", "abstract", "submitted"]
+match_claim = "Record 1 and Record 2 describe the same paper."
+
+[predicates.p]
+text = "The paper's main field is computer science (for example machine learning, computer vision, language processing or computer security)."
+negation = "The paper's main field is not computer science (for example machine learning, computer vision, language processing or computer security)."
+fields = ["title", "abstract"]
+rule = { field = "primary_group", equals = "computer science" }
+
+[predicates.q]
+text = "The paper's title contains a colon."
+negation = "The paper's title does not contain a colon."
+fields = ["title"]
+rule = { field = "title", contains_any = [":"] }
+
+[conjunction]
+pq = "The paper's main field is computer science (for example machine learning, computer vision, language processing or computer security), and the paper's title contains a colon."
+qp = "The paper's title contains a colon, and the paper's main field is computer science (for example machine learning, computer vision, language processing or computer security)."
+
+[map]
+field = "title"
+instruction = "Rewrite this paper title in canonical form: sentence case (capitalize only the first word, the first word after a colon, proper nouns and acronyms), LaTeX markup replaced by plain text (for example $\\alpha$ becomes alpha), and no trailing period. Keep every other word unchanged."

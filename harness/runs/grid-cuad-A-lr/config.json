@@ -1,0 +1,37 @@
+{
+  "run": {
+    "seed": 1021101,
+    "repeats": 5,
+    "concurrency": 16,
+    "output_dir": "runs",
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/cuad-A"
+  },
+  "identities": {
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 200,
+      "count_batch": 10
+    }
+  },
+  "ext": {
+    "include_base": true,
+    "base_count": true,
+    "mitigations": [],
+    "segments": [
+      "reword"
+    ],
+    "reword": {
+      "p": [
+        "The clause restricts a party from engaging in competition, from dealing with anyone except the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees.",
+        "Under the clause, a party faces at least one of these restrictions: on competing, on dealing with anyone other than the counterparty (exclusivity), or on soliciting or hiring the counterparty's customers or employees."
+      ],
+      "pq": "The clause restricts a party from engaging in competition, from dealing with anyone except the counterparty (exclusivity), or from soliciting or hiring the counterparty's customers or employees, and the title of the agreement includes one of the words distribution, distributor, distributorship, reseller or supply.",
+      "template_style": "plain",
+      "field_order": "reversed"
+    }
+  }
+}

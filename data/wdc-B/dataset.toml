@@ -1,0 +1,23 @@
+# WDC Products offers, predicate pair B (a judgment-laden predicate and a broad category).
+name = "wdc-B"
+records = "../wdc-products/records.csv"
+text_fields = ["title", "description", "brand", "price"]
+match_claim = "Record 1 and Record 2 refer to the same real-world product."
+
+[predicates.p]
+text = "The product is intended mainly for professional or business use."
+negation = "The product is not intended mainly for professional or business use."
+fields = ["title", "description", "brand"]
+
+[predicates.q]
+text = "The product is a computer, a computer component or a computer accessory (for example a processor, a graphics card, a keyboard, a monitor or a network switch)."
+negation = "The product is not a computer, a computer component or a computer accessory (for example a processor, a graphics card, a keyboard, a monitor or a network switch)."
+fields = ["title", "description"]
+
+[conjunction]
+pq = "The product is intended mainly for professional or business use, and it is a computer, a computer component or a computer accessory (for example a processor, a graphics card, a keyboard, a monitor or a network switch)."
+qp = "The product is a computer, a computer component or a computer accessory (for example a processor, a graphics card, a keyboard, a monitor or a network switch), and it is intended mainly for professional or business use."
+
+[map]
+field = "title"
+instruction = "Rewrite this product title in canonical form: the brand name, then the product line and model or part number, then the most important specification, separated by single spaces. Remove colors, marketing words, shop names and punctuation, and write it in English."

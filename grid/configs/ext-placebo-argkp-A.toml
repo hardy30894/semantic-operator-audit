@@ -1,0 +1,34 @@
+# ArgKP as the grid's 11th condition pair (added 2026-11-08, after the grid's first runs): the logical claims and the
+# rewordings in one run, like the other 10 pairs (grid/run.py lr_config takes [run], [data] and [ext] from here).
+# Same seed and data as study-argkp-A (the matching runs), so the rows come from ArgKP's frozen seed.
+# p (stance) is word for word argq-A's p, so its two paraphrases are argq-A's (configs/ext-placebo-argq-A.toml).
+# q (more than 20 words) is argq-D's p; the paraphrase of "p and q" joins the two halves already checked for those
+# pairs: argq-A's first paraphrase of stance and argq-D's first paraphrase of length (configs/ext-placebo-argq-D.toml).
+# ArgKP's arguments and topics largely come from ArgQ-30k (1,174 of 1,740 arguments appear verbatim in data/argq).
+
+[run]
+seed = 1022401
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/argkp-A"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 200
+
+[ext]
+include_base = true
+base_count = false
+mitigations = []
+segments = ["reword"]
+
+[ext.reword]
+p = ["The argument backs the position stated in the topic.", "The position stated in the topic is supported by the argument."]
+pq = "The argument backs the position stated in the topic, and the argument is more than 20 words in length."
+template_style = "plain"
+field_order = "reversed"

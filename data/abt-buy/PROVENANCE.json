@@ -1,0 +1,16 @@
+{
+  "source": "Abt-Buy (DeepMatcher textual), http://pages.cs.wisc.edu/~anhai/data1/deepmatcher_data/Textual/Abt-Buy/",
+  "archive": "abt_buy_exp_data.zip",
+  "sha256": {
+    "tableA.csv": "20b79995258c4ef80bb96b731762a6fe869650cc42dcb2c58994bda91b0d81aa",
+    "tableB.csv": "e6ebe54c98fd69c5ad4b8364dde53c323ae872c49cf3c2ad5f7b9acd246e1eb6",
+    "train.csv": "efa7ee36e35915aa2e5c8218bb90a94ff11a6cc7a9c4a45cefff1bfc16d64061",
+    "valid.csv": "25ac7b6035327c82a9e45c93e02e24dd2fffe7afff779ae9381e5c32f727c3c0",
+    "test.csv": "fd815442d37368cecc4cd3b5a0af33930ce5b7b353b222b810d8079211e81d9a"
+  },
+  "records": 2173,
+  "positive_pairs": 1028,
+  "entities_with_2_or_more_records": 1012,
+  "max_description_chars": 300,
+  "licence": "not stated on the download page; cite Koepcke et al. 2010 and DeepMatcher, do not redistribute"
+}

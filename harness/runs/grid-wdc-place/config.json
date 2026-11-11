@@ -1,0 +1,23 @@
+{
+  "run": {
+    "seed": 1018001,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/wdc-A"
+  },
+  "identities": {
+    "placement": {
+      "enabled": true,
+      "n_tuples": 200
+    }
+  },
+  "grid": {
+    "kind": "place",
+    "where": "wdc",
+    "units": "grid/units/match-wdc.json"
+  }
+}

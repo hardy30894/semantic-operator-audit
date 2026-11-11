@@ -1,0 +1,52 @@
+# Addendum G: rewording placebos and a three-valued prompt for filter_algebra, on IBM ArgQ-30k debate arguments pair B.
+# Same seed and data as study-argq-B, so the 200 rows are the first 200 of study-argq-B's filter rows. Segments,
+# interleaved in one seeded order (extension/placebo_segments.py):
+#   base     semaudit's p, not_p, q, p_and_q and q_and_p requests (no COUNT: base_count = false)
+#   reword   p in two paraphrases, in the plain template and with the record's fields reversed; p and q in a paraphrase
+#   unknown  p, not_p, q and p_and_q with a third answer, "Unknown"
+# Arms: haiku-5.5, gpt-5.6-luna, and gemini-3.5-flash-lite with its temperature-0 arm in one process (interleaved).
+#   python3 -m extension plan configs/ext-placebo-argq-B.toml --calibration configs/ext-calibration-v3.json --backend haiku-5.5 --backend gpt-5.6-luna --backend gemini-3.5-flash-lite --backend gemini-3.5-flash-lite-t0
+#   python3 -m extension run configs/ext-placebo-argq-B.toml --run-id ext-placebo-argq-B --backend haiku-5.5 --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-argq-B.toml --run-id ext-placebo-argq-B --backend gpt-5.6-luna --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension run configs/ext-placebo-argq-B.toml --run-id ext-placebo-argq-B --backend gemini-3.5-flash-lite --backend gemini-3.5-flash-lite-t0 --calibration configs/ext-calibration-v3.json --max-cost-factor 2 --yes
+#   python3 -m extension placebo runs/ext-placebo-argq-B --n-perm 10000 --n-boot 10000
+# Pooled over the four designs, once all have run:
+#   python3 -m extension placebo-pool runs/ext-placebo-wdc-B runs/ext-placebo-cuad-A runs/ext-placebo-argq-B runs/ext-placebo-arxiv-A --out results/placebo --n-perm 10000 --n-boot 10000
+include = ["models-v2.toml"]
+
+[run]
+seed = 1021202
+repeats = 5
+concurrency = 16
+output_dir = "runs"
+prompt_style = "lotus"
+
+[data]
+kind = "dir"
+path = "../data/argq-B"
+
+[identities.filter_algebra]
+enabled = true
+n_rows = 200
+
+[ext]
+include_base = true
+base_count = false
+mitigations = []
+segments = ["reword", "unknown"]
+
+[ext.reword]
+p = ["A person preparing a speech for this side of the debate would use the argument as it stands, regardless of their personal opinion.", "Whatever their own views, a person preparing a speech for this side of the debate would take the argument and use it as it is."]
+pq = "A person preparing a speech for this side of the debate would use the argument as it stands, regardless of their personal opinion, and the argument backs the position stated in the topic."
+template_style = "plain"
+field_order = "reversed"
+
+[[backends]]
+name = "gemini-3.5-flash-lite-t0"
+kind = "openrouter"
+model = "google/gemini-3.5-flash-lite"
+params = { upstream = "google-ai-studio", reasoning_effort = "minimal", temperature = 0.0, max_tokens = 1024 }
+price_in_per_mtok = 0.30
+price_out_per_mtok = 2.50
+measured_usd_per_1k_calls = 0.075
+pairs_with = "gemini-3.5-flash-lite"

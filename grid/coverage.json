@@ -1,0 +1,7179 @@
+{
+ "plan": [
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "COUNT",
+   "status": "have",
+   "calls": 100,
+   "op": "count",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 9000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "cuad"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "cuad"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "argq"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "argq"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "have",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "status": "run",
+   "calls": 3000,
+   "op": "map",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "have",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "have",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "have",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "status": "run",
+   "calls": 10000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "status": "run",
+   "calls": 100,
+   "op": "count",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "filter tests (identity runs)",
+   "status": "from the combined run",
+   "calls": 0,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 345,
+   "op": "filter_batch",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "batching",
+   "status": "run",
+   "calls": 1000,
+   "op": "filter",
+   "dataset": "arxiv"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "wdc"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "wdc"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt",
+   "test": "placement",
+   "status": "run",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "abt"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt",
+   "test": "placement",
+   "status": "have",
+   "calls": 3000,
+   "op": "filter",
+   "dataset": "abt"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argkp",
+   "test": "placement",
+   "status": "have",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argkp",
+   "test": "placement",
+   "status": "have",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "have",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argkp",
+   "test": "placement",
+   "status": "have",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp",
+   "test": "placement",
+   "status": "run",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argkp",
+   "test": "placement",
+   "status": "run",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp",
+   "test": "placement",
+   "status": "run",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp",
+   "test": "placement",
+   "status": "run",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp",
+   "test": "symmetry",
+   "status": "run",
+   "calls": 2000,
+   "op": "match",
+   "dataset": "argkp"
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp",
+   "test": "placement",
+   "status": "run",
+   "calls": 1800,
+   "op": "filter",
+   "dataset": "argkp"
+  }
+ ],
+ "to_run": [
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.017078846153846153
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.024335303278688526
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.01627167384615385
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.03688041967213115
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.02825230769230769
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.05056409016393443
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.05277189131578947
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0023863617142857144
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.010011479866666667
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.005277189131578947
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.01680817
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.8673196757553426
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.046236
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.487664285714286
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.132528
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 5.230485714285715
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.364376
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.6980571428571425
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.15909024
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.055358700000000004
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.024335303278688526
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.07371857266666666
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.03688041967213115
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.13585563333333334
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.05056409016393443
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.05277189131578947
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0023863617142857144
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.010011479866666667
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.005277189131578947
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.8673196757553426
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.1942089333333333
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.08673196757553427
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.487664285714286
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6290614999999999
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.2487664285714286
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 5.230485714285715
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 1.1051883333333332
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.5230485714285715
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.6980571428571425
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.7371857266666667
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.36980571428571424
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.0172788
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.021095364864864866
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.013235199999999999
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.033480481081081086
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.0271462
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.04492335135135135
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.04878435294117647
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0021020416
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.009130426533333333
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.004878435294117647
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.01578015
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.8058976470588235
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.037094176
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.2371220588235294
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.10743599999999999
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.565464705882353
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.329596
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.4007
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.13235200000000003
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.04171395
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.021095364864864866
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.0623116
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.033480481081081086
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.11136446666666668
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.04492335135135135
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.04878435294117647
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0021020416
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.009130426533333333
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.004878435294117647
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.8058976470588235
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.15196468
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.08058976470588236
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.2371220588235294
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.49893899999999997
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.22371220588235294
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.565464705882353
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.8264589999999999
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.4565464705882353
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.4007
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6231160000000001
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.34007
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.020230266666666667
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.026988463157894736
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.01575456533333333
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.03882704870577585
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.024131866666666668
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.051122931578947366
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.05406984033333334
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0023379472
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.010006392266666667
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.005406984033333334
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.038441188
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.8958222500625356
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.03629904090035787
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.1674100536641475
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.08958222500625357
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.7346064852060887
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.5295989209040086
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.10452951702170261
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.5455026523247772
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.2529598920904009
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 2.6025106084597778
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 5.244644689750581
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.3022976695945434
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.9341474083472626
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.524464468975058
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 4.8740497078165035
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.8005969156871218
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.12695369549983807
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6578438572133974
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.38005969156871217
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 3.744530840310926
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.020230266666666667
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.026988463157894736
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.01575456533333333
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.03882704870577585
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.024131866666666668
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "cuad-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.051122931578947366
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 9000,
+   "usd": 0.0486628563
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0023379472
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.010006392266666667
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.005406984033333334
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 9000,
+   "usd": 0.806240025056282
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.03629904090035787
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.1674100536641475
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.08958222500625357
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 9000,
+   "usd": 2.276639028813608
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.10452951702170261
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.5455026523247772
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.2529598920904009
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 9000,
+   "usd": 4.720180220775523
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.3022976695945434
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.9341474083472626
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.524464468975058
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 9000,
+   "usd": 3.4205372241184095
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.12695369549983807
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6578438572133974
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "cuad-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.38005969156871217
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.026594333333333334
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.0180354696969697
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.009012933333333334
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.027719451768109398
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.016478733333333336
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.04048017676767677
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.037084092828880096
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0013552758666666666
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.0066460516207203215
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.003708409282888009
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.01937474
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.7093302734204441
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.024787233557816656
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.11421052913814689
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.0709330273420444
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.3728335940576653
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.002987862919951
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0713792289778425
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.3721529573920566
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.20029878629199513
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.3208478325004829
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.152816310952491
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.2064275736869335
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6372942811093433
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.4152816310952491
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 2.4737182515767406
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.009389919905481
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.08669184703861967
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.44879440259514164
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.30093899199054813
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.9004554402500673
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.026594333333333334
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.0180354696969697
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.009012933333333334
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.027719451768109398
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.016478733333333336
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "argq-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.04048017676767677
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.037084092828880096
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0013552758666666666
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.0066460516207203215
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.003708409282888009
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.7093302734204441
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.024787233557816656
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.11421052913814689
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.0709330273420444
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 2.002987862919951
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0713792289778425
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.3721529573920566
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.20029878629199513
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.152816310952491
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.2064275736869335
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.6372942811093433
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.4152816310952491
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 3.009389919905481
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.08669184703861967
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.44879440259514164
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argq-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.30093899199054813
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.05189613333333334
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.05225096464646464
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.017290240000000002
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.07050921726482086
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.07610166666666666
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-A",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.09755882159111971
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.101474954
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0034605215999999996
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.01456043428
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.0101474954
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.0171126
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 1.7095139181571528
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.1144717708362967
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.43115700728191825
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.17095139181571528
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.2585357801074159
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.827279700117786
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.32964173766969
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 1.4049173624455358
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.4827279700117786
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 0.915921822017693
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 10.008450998277544
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.9533185643434438
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 2.4058543207397687
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 1.0008450998277543
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.7153622638372779
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 7.252748326153683
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.40035808047851695
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 345,
+   "usd": 1.6942470450665952
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.7252748326153683
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-A",
+   "test": "idempotence",
+   "calls": 3000,
+   "usd": 1.3178418941734094
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.05189613333333334
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.05225096464646464
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.017290240000000002
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.07050921726482086
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 100,
+   "usd": 0.07610166666666666
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "arxiv-B",
+   "test": "COUNT with p, new session",
+   "calls": 1000,
+   "usd": 0.09755882159111971
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 0.101474954
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.0034605215999999996
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.01456043428
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.0101474954
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 1.7095139181571528
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.1144717708362967
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 0.43115700728191825
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.17095139181571528
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 4.827279700117786
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.32964173766969
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 1.4049173624455358
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.4827279700117786
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 10.008450998277544
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.9533185643434438
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 2.4058543207397687
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 1.0008450998277543
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "logic + rewordings (one run)",
+   "calls": 10000,
+   "usd": 7.252748326153683
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "COUNT, in the same run",
+   "calls": 100,
+   "usd": 0.40035808047851695
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 345,
+   "usd": 1.6942470450665952
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "arxiv-B",
+   "test": "batching",
+   "calls": 1000,
+   "usd": 0.7252748326153683
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.07300590983606557
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.11064125901639343
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.15169227049180328
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.014811277333333333
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.01583156739473684
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.2601959027266028
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.7462992857142858
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 1.5691457142857144
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "wdc",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 1.1094171428571427
+  },
+  {
+   "model": "haiku-5.5",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.06988461904761906
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.09941904761904763
+  },
+  {
+   "model": "gemini-3.5-flash-lite",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.14737142857142857
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.014811277333333333
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "abt",
+   "test": "placement",
+   "calls": 3000,
+   "usd": 0.014635305882352942
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.24390436270696744
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.746
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 1.7535166666666668
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "abt",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 1.0141
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.009147355
+  },
+  {
+   "model": "qwen-3.7-flash",
+   "where": "argkp",
+   "test": "placement",
+   "calls": 1800,
+   "usd": 0.0066215505
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argkp",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.14002394362908188
+  },
+  {
+   "model": "deepseek-v3.2",
+   "where": "argkp",
+   "test": "placement",
+   "calls": 1800,
+   "usd": 0.10724280424438672
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.428273856145793
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "where": "argkp",
+   "test": "placement",
+   "calls": 1800,
+   "usd": 0.30282936360687945
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 1.006682767626341
+  },
+  {
+   "model": "sonnet-5.5",
+   "where": "argkp",
+   "test": "placement",
+   "calls": 1800,
+   "usd": 0.6278593814286486
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp",
+   "test": "symmetry",
+   "calls": 2000,
+   "usd": 0.5821883612834432
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "where": "argkp",
+   "test": "placement",
+   "calls": 1800,
+   "usd": 0.4549860990976737
+  }
+ ],
+ "sources": {
+  "haiku-5.5": {
+   "wdc-A": {
+    "logic and rewordings": "ext-placebo-wdc-A",
+    "COUNT": "grid-wdc-A-count",
+    "batching": "study-wdc-A",
+    "idempotence": "study-wdc-A"
+   },
+   "wdc-B": {
+    "logic and rewordings": "ext-placebo-wdc-B",
+    "COUNT": "study-wdc-B",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "ext-placebo-abt-A",
+    "COUNT": "grid-abt-A-count",
+    "batching": "study-abt-A",
+    "idempotence": "study-abt-A"
+   },
+   "abt-B": {
+    "logic and rewordings": "ext-placebo-abt-B",
+    "COUNT": "study-abt-B",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "ext-placebo-cuad-A",
+    "COUNT": "grid-cuad-A-count",
+    "batching": "study-cuad-A",
+    "idempotence": "study-cuad-A"
+   },
+   "cuad-B": {
+    "logic and rewordings": "ext-placebo-cuad-B",
+    "COUNT": "grid-cuad-B-count",
+    "batching": "study-cuad-B"
+   },
+   "argq-A": {
+    "logic and rewordings": "ext-placebo-argq-A",
+    "COUNT": "grid-argq-A-count",
+    "batching": "study-argq-A",
+    "idempotence": "study-argq-A"
+   },
+   "argq-B": {
+    "logic and rewordings": "ext-placebo-argq-B",
+    "COUNT": "grid-argq-B-count",
+    "batching": "study-argq-B"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "ext-placebo-arxiv-A",
+    "COUNT": "grid-arxiv-A-count",
+    "batching": "study-arxiv-A",
+    "idempotence": "study-arxiv-A"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "ext-placebo-arxiv-B",
+    "COUNT": "grid-arxiv-B-count",
+    "batching": "study-arxiv-B"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A"
+   },
+   "argkp": {
+    "symmetry": "study-argkp-A",
+    "placement": "study-argkp-A"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gpt-5.6-luna": {
+   "wdc-A": {
+    "logic and rewordings": "ext-placebo-wdc-A",
+    "COUNT": "grid-wdc-A-count",
+    "batching": "study-wdc-A",
+    "idempotence": "study-wdc-A"
+   },
+   "wdc-B": {
+    "logic and rewordings": "ext-placebo-wdc-B",
+    "COUNT": "study-wdc-B",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "ext-placebo-abt-A",
+    "COUNT": "grid-abt-A-count",
+    "batching": "study-abt-A",
+    "idempotence": "study-abt-A"
+   },
+   "abt-B": {
+    "logic and rewordings": "ext-placebo-abt-B",
+    "COUNT": "study-abt-B",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "ext-placebo-cuad-A",
+    "COUNT": "grid-cuad-A-count",
+    "batching": "study-cuad-A",
+    "idempotence": "study-cuad-A"
+   },
+   "cuad-B": {
+    "logic and rewordings": "ext-placebo-cuad-B",
+    "COUNT": "grid-cuad-B-count",
+    "batching": "study-cuad-B"
+   },
+   "argq-A": {
+    "logic and rewordings": "ext-placebo-argq-A",
+    "COUNT": "grid-argq-A-count",
+    "batching": "study-argq-A",
+    "idempotence": "study-argq-A"
+   },
+   "argq-B": {
+    "logic and rewordings": "ext-placebo-argq-B",
+    "COUNT": "grid-argq-B-count",
+    "batching": "study-argq-B"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "ext-placebo-arxiv-A",
+    "COUNT": "grid-arxiv-A-count",
+    "batching": "study-arxiv-A",
+    "idempotence": "study-arxiv-A"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "ext-placebo-arxiv-B",
+    "COUNT": "grid-arxiv-B-count",
+    "batching": "study-arxiv-B"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A"
+   },
+   "argkp": {
+    "symmetry": "study-argkp-A",
+    "placement": "study-argkp-A"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gemini-3.5-flash-lite": {
+   "wdc-A": {
+    "logic and rewordings": "ext-placebo-wdc-A",
+    "COUNT": "grid-wdc-A-count",
+    "batching": "study-wdc-A",
+    "idempotence": "study-wdc-A"
+   },
+   "wdc-B": {
+    "logic and rewordings": "ext-placebo-wdc-B",
+    "COUNT": "study-wdc-B",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "ext-placebo-abt-A",
+    "COUNT": "grid-abt-A-count",
+    "batching": "study-abt-A",
+    "idempotence": "study-abt-A"
+   },
+   "abt-B": {
+    "logic and rewordings": "ext-placebo-abt-B",
+    "COUNT": "study-abt-B",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "ext-placebo-cuad-A",
+    "COUNT": "grid-cuad-A-count",
+    "batching": "study-cuad-A",
+    "idempotence": "study-cuad-A"
+   },
+   "cuad-B": {
+    "logic and rewordings": "ext-placebo-cuad-B",
+    "COUNT": "grid-cuad-B-count",
+    "batching": "study-cuad-B"
+   },
+   "argq-A": {
+    "logic and rewordings": "ext-placebo-argq-A",
+    "COUNT": "grid-argq-A-count",
+    "batching": "study-argq-A",
+    "idempotence": "study-argq-A"
+   },
+   "argq-B": {
+    "logic and rewordings": "ext-placebo-argq-B",
+    "COUNT": "grid-argq-B-count",
+    "batching": "study-argq-B"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "ext-placebo-arxiv-A",
+    "COUNT": "grid-arxiv-A-count",
+    "batching": "study-arxiv-A",
+    "idempotence": "study-arxiv-A"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "ext-placebo-arxiv-B",
+    "COUNT": "grid-arxiv-B-count",
+    "batching": "study-arxiv-B"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A"
+   },
+   "argkp": {
+    "symmetry": "study-argkp-A",
+    "placement": "study-argkp-A"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "qwen-3.7-flash": {
+   "wdc-A": {
+    "logic and rewordings": "grid-wdc-A-lr",
+    "COUNT": "grid-wdc-A-lr",
+    "batching": "grid-wdc-A-batch",
+    "idempotence": "grid-wdc-A-idem"
+   },
+   "wdc-B": {
+    "logic and rewordings": "grid-wdc-B-lr",
+    "COUNT": "grid-wdc-B-lr",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "grid-abt-A-lr",
+    "COUNT": "grid-abt-A-lr",
+    "batching": "grid-abt-A-batch",
+    "idempotence": "grid-abt-A-idem"
+   },
+   "abt-B": {
+    "logic and rewordings": "grid-abt-B-lr",
+    "COUNT": "grid-abt-B-lr",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "grid-cuad-A-lr",
+    "COUNT": "grid-cuad-A-lr",
+    "batching": "grid-cuad-A-batch",
+    "idempotence": "grid-cuad-A-idem"
+   },
+   "cuad-B": {
+    "logic and rewordings": "grid-cuad-B-lr",
+    "COUNT": "grid-cuad-B-lr",
+    "batching": "grid-cuad-B-batch"
+   },
+   "argq-A": {
+    "logic and rewordings": "grid-argq-A-lr",
+    "COUNT": "grid-argq-A-lr",
+    "batching": "grid-argq-A-batch",
+    "idempotence": "grid-argq-A-idem"
+   },
+   "argq-B": {
+    "logic and rewordings": "grid-argq-B-lr",
+    "COUNT": "grid-argq-B-lr",
+    "batching": "grid-argq-B-batch"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "grid-arxiv-A-lr",
+    "COUNT": "grid-arxiv-A-lr",
+    "batching": "grid-arxiv-A-batch",
+    "idempotence": "grid-arxiv-A-idem"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "grid-arxiv-B-lr",
+    "COUNT": "grid-arxiv-B-lr",
+    "batching": "grid-arxiv-B-batch"
+   },
+   "wdc": {
+    "symmetry": "grid-wdc-sym",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "grid-abt-place"
+   },
+   "argkp": {
+    "symmetry": "grid-argkp-sym",
+    "placement": "grid-argkp-place"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "deepseek-v3.2": {
+   "wdc-A": {
+    "logic and rewordings": "grid-wdc-A-lr",
+    "COUNT": "grid-wdc-A-lr",
+    "batching": "study-wdc-A",
+    "idempotence": "study-wdc-A"
+   },
+   "wdc-B": {
+    "logic and rewordings": "grid-wdc-B-lr",
+    "COUNT": "study-wdc-B",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "grid-abt-A-lr",
+    "COUNT": "grid-abt-A-lr",
+    "batching": "study-abt-A",
+    "idempotence": "study-abt-A"
+   },
+   "abt-B": {
+    "logic and rewordings": "grid-abt-B-lr",
+    "COUNT": "study-abt-B",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "grid-cuad-A-lr",
+    "COUNT": "grid-cuad-A-lr",
+    "batching": "grid-cuad-A-batch",
+    "idempotence": "grid-cuad-A-idem"
+   },
+   "cuad-B": {
+    "logic and rewordings": "grid-cuad-B-lr",
+    "COUNT": "grid-cuad-B-lr",
+    "batching": "grid-cuad-B-batch"
+   },
+   "argq-A": {
+    "logic and rewordings": "grid-argq-A-lr",
+    "COUNT": "grid-argq-A-lr",
+    "batching": "grid-argq-A-batch",
+    "idempotence": "grid-argq-A-idem"
+   },
+   "argq-B": {
+    "logic and rewordings": "grid-argq-B-lr",
+    "COUNT": "grid-argq-B-lr",
+    "batching": "grid-argq-B-batch"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "grid-arxiv-A-lr",
+    "COUNT": "grid-arxiv-A-lr",
+    "batching": "grid-arxiv-A-batch",
+    "idempotence": "grid-arxiv-A-idem"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "grid-arxiv-B-lr",
+    "COUNT": "grid-arxiv-B-lr",
+    "batching": "grid-arxiv-B-batch"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A"
+   },
+   "argkp": {
+    "symmetry": "grid-argkp-sym",
+    "placement": "grid-argkp-place"
+   }
+  },
+  "gemini-3.5-flash": {
+   "wdc-A": {
+    "logic and rewordings": "grid-wdc-A-lr",
+    "COUNT": "grid-wdc-A-lr",
+    "batching": "study-wdc-A-flash",
+    "idempotence": "study-wdc-A-flash"
+   },
+   "wdc-B": {
+    "logic and rewordings": "grid-wdc-B-lr",
+    "COUNT": "study-wdc-B-flash",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "grid-abt-A-lr",
+    "COUNT": "grid-abt-A-lr",
+    "batching": "study-abt-A-flash",
+    "idempotence": "study-abt-A-flash"
+   },
+   "abt-B": {
+    "logic and rewordings": "grid-abt-B-lr",
+    "COUNT": "study-abt-B-flash",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "grid-cuad-A-lr",
+    "COUNT": "grid-cuad-A-lr",
+    "batching": "grid-cuad-A-batch",
+    "idempotence": "grid-cuad-A-idem"
+   },
+   "cuad-B": {
+    "logic and rewordings": "grid-cuad-B-lr",
+    "COUNT": "grid-cuad-B-lr",
+    "batching": "grid-cuad-B-batch"
+   },
+   "argq-A": {
+    "logic and rewordings": "grid-argq-A-lr",
+    "COUNT": "grid-argq-A-lr",
+    "batching": "grid-argq-A-batch",
+    "idempotence": "grid-argq-A-idem"
+   },
+   "argq-B": {
+    "logic and rewordings": "grid-argq-B-lr",
+    "COUNT": "grid-argq-B-lr",
+    "batching": "grid-argq-B-batch"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "grid-arxiv-A-lr",
+    "COUNT": "grid-arxiv-A-lr",
+    "batching": "grid-arxiv-A-batch",
+    "idempotence": "grid-arxiv-A-idem"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "grid-arxiv-B-lr",
+    "COUNT": "grid-arxiv-B-lr",
+    "batching": "grid-arxiv-B-batch"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A-flash",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A-flash"
+   },
+   "argkp": {
+    "symmetry": "grid-argkp-sym",
+    "placement": "grid-argkp-place"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "sonnet-5.5": {
+   "wdc-A": {
+    "logic and rewordings": "grid-wdc-A-lr",
+    "COUNT": "grid-wdc-A-lr",
+    "batching": "study-wdc-A-tier",
+    "idempotence": "study-wdc-A-tier"
+   },
+   "wdc-B": {
+    "logic and rewordings": "grid-wdc-B-lr",
+    "COUNT": "study-wdc-B-tier",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "grid-abt-A-lr",
+    "COUNT": "grid-abt-A-lr",
+    "batching": "study-abt-A-tier",
+    "idempotence": "study-abt-A-tier"
+   },
+   "abt-B": {
+    "logic and rewordings": "grid-abt-B-lr",
+    "COUNT": "study-abt-B-tier",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "grid-cuad-A-lr",
+    "COUNT": "grid-cuad-A-lr",
+    "batching": "grid-cuad-A-batch",
+    "idempotence": "grid-cuad-A-idem"
+   },
+   "cuad-B": {
+    "logic and rewordings": "grid-cuad-B-lr",
+    "COUNT": "grid-cuad-B-lr",
+    "batching": "grid-cuad-B-batch"
+   },
+   "argq-A": {
+    "logic and rewordings": "grid-argq-A-lr",
+    "COUNT": "grid-argq-A-lr",
+    "batching": "grid-argq-A-batch",
+    "idempotence": "grid-argq-A-idem"
+   },
+   "argq-B": {
+    "logic and rewordings": "grid-argq-B-lr",
+    "COUNT": "grid-argq-B-lr",
+    "batching": "grid-argq-B-batch"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "grid-arxiv-A-lr",
+    "COUNT": "grid-arxiv-A-lr",
+    "batching": "grid-arxiv-A-batch",
+    "idempotence": "grid-arxiv-A-idem"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "grid-arxiv-B-lr",
+    "COUNT": "grid-arxiv-B-lr",
+    "batching": "grid-arxiv-B-batch"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A-tier",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A-tier"
+   },
+   "argkp": {
+    "symmetry": "grid-argkp-sym",
+    "placement": "grid-argkp-place"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  },
+  "gpt-5.6-terra": {
+   "wdc-A": {
+    "logic and rewordings": "grid-wdc-A-lr",
+    "COUNT": "grid-wdc-A-lr",
+    "batching": "study-wdc-A-tier",
+    "idempotence": "study-wdc-A-tier"
+   },
+   "wdc-B": {
+    "logic and rewordings": "grid-wdc-B-lr",
+    "COUNT": "study-wdc-B-tier",
+    "batching": "grid-wdc-B-batch"
+   },
+   "abt-A": {
+    "logic and rewordings": "grid-abt-A-lr",
+    "COUNT": "grid-abt-A-lr",
+    "batching": "study-abt-A-tier",
+    "idempotence": "study-abt-A-tier"
+   },
+   "abt-B": {
+    "logic and rewordings": "grid-abt-B-lr",
+    "COUNT": "study-abt-B-tier",
+    "batching": "grid-abt-B-batch"
+   },
+   "cuad-A": {
+    "logic and rewordings": "grid-cuad-A-lr",
+    "COUNT": "grid-cuad-A-lr",
+    "batching": "grid-cuad-A-batch",
+    "idempotence": "grid-cuad-A-idem"
+   },
+   "cuad-B": {
+    "logic and rewordings": "grid-cuad-B-lr",
+    "COUNT": "grid-cuad-B-lr",
+    "batching": "grid-cuad-B-batch"
+   },
+   "argq-A": {
+    "logic and rewordings": "grid-argq-A-lr",
+    "COUNT": "grid-argq-A-lr",
+    "batching": "grid-argq-A-batch",
+    "idempotence": "grid-argq-A-idem"
+   },
+   "argq-B": {
+    "logic and rewordings": "grid-argq-B-lr",
+    "COUNT": "grid-argq-B-lr",
+    "batching": "grid-argq-B-batch"
+   },
+   "arxiv-A": {
+    "logic and rewordings": "grid-arxiv-A-lr",
+    "COUNT": "grid-arxiv-A-lr",
+    "batching": "grid-arxiv-A-batch",
+    "idempotence": "grid-arxiv-A-idem"
+   },
+   "arxiv-B": {
+    "logic and rewordings": "grid-arxiv-B-lr",
+    "COUNT": "grid-arxiv-B-lr",
+    "batching": "grid-arxiv-B-batch"
+   },
+   "wdc": {
+    "symmetry": "study-wdc-A-tier",
+    "placement": "grid-wdc-place"
+   },
+   "abt": {
+    "symmetry": "grid-abt-sym",
+    "placement": "study-abt-A-tier"
+   },
+   "argkp": {
+    "symmetry": "grid-argkp-sym",
+    "placement": "grid-argkp-place"
+   },
+   "argkp-A": {
+    "logic and rewordings": "grid-argkp-A-lr",
+    "COUNT": "grid-argkp-A-lr",
+    "batching": "grid-argkp-A-batch",
+    "idempotence": "grid-argkp-A-idem"
+   }
+  }
+ },
+ "total_calls": 705160,
+ "total_usd": 217.7080053566291
+}

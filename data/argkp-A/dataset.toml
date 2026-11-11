@@ -1,0 +1,33 @@
+# IBM ArgKP arguments with gold key-point clusters, for the matching identities (symmetry, transitivity, placement).
+# Extension dataset (not part of the pre-registered study); see extension/data/DATASETS-v3.md.
+# Gold entity: the one key point an argument matches (records.csv column `cluster`), so two records match when they
+# make the same key point. Models see only `topic` and `argument`. The hidden column `title` (topic and argument) is
+# there because the block builder ranks a block's negatives by token similarity of `title`; `source` is the ArgKP
+# argument id, unique per record, so placement joins two arguments of one key point (a self-join).
+# p (stance, gold) is the placement filter: both arguments of a tuple share their key point's stance, so the claim has
+# the same truth whichever argument it is read about. q, the conjunctions and the map are required by the loader and
+# are verbatim from argq-A (stance), argq-D (length) and the ArgQ map; study-argkp-A.toml does not use them.
+name = "argkp-A"
+records = "../argkp/records.csv"
+text_fields = ["topic", "argument"]
+match_claim = "The arguments in Record 1 and Record 2 make the same main point."
+
+[predicates.p]
+text = "The argument supports the position stated in the topic."
+negation = "The argument does not support the position stated in the topic."
+fields = ["topic", "argument"]
+rule = { field = "stance", equals = "pro" }
+
+[predicates.q]
+text = "The argument is more than 20 words long."
+negation = "The argument is not more than 20 words long."
+fields = ["argument"]
+rule = { field = "n_words", gt = 20 }
+
+[conjunction]
+pq = "The argument supports the position stated in the topic, and the argument is more than 20 words long."
+qp = "The argument is more than 20 words long, and the argument supports the position stated in the topic."
+
+[map]
+field = "argument"
+instruction = "Rewrite this argument in canonical form: correct its spelling, grammar, capitalization and punctuation, and write out abbreviations and text-message spellings (for example \"u\" becomes \"you\"). Keep every other word unchanged and do not add or remove any point."

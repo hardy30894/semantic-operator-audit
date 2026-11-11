@@ -1,0 +1,28 @@
+{
+  "run": {
+    "seed": 1018003,
+    "repeats": 5,
+    "concurrency": 16,
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/abt-A"
+  },
+  "identities": {
+    "placement": {
+      "enabled": true,
+      "n_tuples": 200
+    }
+  },
+  "grid": {
+    "kind": "place",
+    "where": "abt",
+    "units": "grid/units/match-abt.json"
+  },
+  "reasoning": {
+    "model": "gpt-5.6-luna-reasoning-medium",
+    "effort": "medium",
+    "reasoning_off_side": "gpt-5.6-luna"
+  }
+}

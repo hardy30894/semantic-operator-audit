@@ -1,0 +1,37 @@
+{
+  "run": {
+    "seed": 1021201,
+    "repeats": 5,
+    "concurrency": 16,
+    "output_dir": "runs",
+    "prompt_style": "lotus"
+  },
+  "data": {
+    "kind": "dir",
+    "path": "../data/argq-A"
+  },
+  "identities": {
+    "filter_algebra": {
+      "enabled": true,
+      "n_rows": 200,
+      "count_batch": 10
+    }
+  },
+  "ext": {
+    "include_base": true,
+    "base_count": true,
+    "mitigations": [],
+    "segments": [
+      "reword"
+    ],
+    "reword": {
+      "p": [
+        "The argument backs the position stated in the topic.",
+        "The position stated in the topic is supported by the argument."
+      ],
+      "pq": "The argument backs the position stated in the topic, and the topic proposes banning, prohibiting or abolishing something.",
+      "template_style": "plain",
+      "field_order": "reversed"
+    }
+  }
+}

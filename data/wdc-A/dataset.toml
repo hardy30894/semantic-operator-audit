@@ -1,0 +1,24 @@
+# WDC Products offers, predicate pair A. Frozen once PREREGISTRATION.md is timestamped.
+name = "wdc-A"
+records = "../wdc-products/records.csv"
+text_fields = ["title", "description", "brand", "price"]
+match_claim = "Record 1 and Record 2 refer to the same real-world product."
+
+[predicates.p]
+text = "The product is a data storage or memory product (for example a hard drive, an SSD, a RAM module, a USB flash drive or a memory card)."
+negation = "The product is not a data storage or memory product (for example a hard drive, an SSD, a RAM module, a USB flash drive or a memory card)."
+fields = ["title", "description", "brand"]
+
+[predicates.q]
+text = "The listed price is above 100, in whatever currency is shown."
+negation = "The listed price is not above 100, in whatever currency is shown."
+fields = ["price"]
+rule = { field = "price", gt = 100 }
+
+[conjunction]
+pq = "The product is a data storage or memory product (for example a hard drive, an SSD, a RAM module, a USB flash drive or a memory card), and its listed price is above 100, in whatever currency is shown."
+qp = "The listed price is above 100, in whatever currency is shown, and the product is a data storage or memory product (for example a hard drive, an SSD, a RAM module, a USB flash drive or a memory card)."
+
+[map]
+field = "title"
+instruction = "Rewrite this product title in canonical form: the brand name, then the product line and model or part number, then the most important specification, separated by single spaces. Remove colors, marketing words, shop names and punctuation, and write it in English."

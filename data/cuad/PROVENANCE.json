@@ -1,0 +1,50 @@
+{
+  "source": "CUAD v1, The Atticus Project, https://www.atticusprojectai.org/cuad; archive https://zenodo.org/records/4595826 (doi:10.5281/zenodo.4595826)",
+  "downloads": [
+    {
+      "file": "master_clauses.csv",
+      "url": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/master_clauses.csv",
+      "sha256": "4da237bec677bf5b02212d523857cd57a801adde60e8021de063c8cc06823720",
+      "check": "crc32 4f288875 and size 3955428 equal those of member CUAD_v1/master_clauses.csv in CUAD_v1.zip of the Zenodo record (read from the archive's central directory)"
+    },
+    {
+      "file": "CUAD_v1_README.txt",
+      "url": "https://zenodo.org/records/4595826/files/CUAD_v1.zip (member CUAD_v1/CUAD_v1_README.txt, fetched by HTTP range request)",
+      "sha256": "d0d1af57cff6d185ed9841566b2f069efffb7ee6ee7b1b49192e94d0a9fe3842",
+      "check": "crc32 d2bddb9f, equal to the archive's central directory entry"
+    }
+  ],
+  "contracts_in_source": 510,
+  "contracts_kept": 341,
+  "records": 4383,
+  "dropped": {
+    "contracts_person_type": 35,
+    "contracts_person_party": 112,
+    "spans_length": 256,
+    "spans_honorific": 3,
+    "spans_repeated_in_another_contract": 68,
+    "spans_excluded_label": 1275
+  },
+  "excluded_categories": [
+    "Change Of Control",
+    "Competitive Restriction Exception",
+    "Covenant Not To Sue",
+    "Liquidated Damages",
+    "Most Favored Nation",
+    "Non-Disparagement",
+    "Post-Termination Services",
+    "Price Restrictions",
+    "Rofr/Rofo/Rofn",
+    "Source Code Escrow",
+    "Uncapped Liability",
+    "Volume Restriction"
+  ],
+  "span_chars": [
+    60,
+    1000
+  ],
+  "licence": "CC BY 4.0",
+  "licence_text": "\"CUAD is licensed under the Creative Commons Attribution 4.0 (CC BY 4.0) license\" (CUAD_v1_README.txt, section LICENSE, which also disclaims any representation about the licence status of the underlying contracts, public filings on SEC EDGAR). The Zenodo record's licence field is cc-by-4.0.",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Hendrycks, Burns, Chen and Ball, CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review, NeurIPS 2021 Datasets and Benchmarks; The Atticus Project. Changes: clause spans extracted, merged, filtered and relabelled as described in harness/scripts/convert_cuad.py."
+}
