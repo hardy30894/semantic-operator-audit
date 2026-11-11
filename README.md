@@ -50,6 +50,15 @@ With SQL conditions these rewrites are safe by construction. With an LLM decidin
 only if the answer depends on the record and the meaning of the condition, and not on how the request is worded
 or packaged.
 
+```mermaid
+flowchart LR
+    Q["WHERE storage device<br/>AND price above 100"] --> O{"optimizer"}
+    O -->|"query A: one prompt<br/>F(p AND q)"| A["records returned by A"]
+    O -->|"query B: two filters<br/>F(p) then F(q)"| B["records returned by B"]
+    A --> C{"the same records?"}
+    B --> C
+```
+
 | | Identity | Query A | Query B |
 |---|---|---|---|
 | H1 | Symmetry | M(a, b) | M(b, a) |
@@ -75,6 +84,19 @@ is wrong. Each query is therefore answered five times per item, and the test com
 disagree with each other against how often each disagrees with itself:
 
 ![Within-query and across-query disagreement](docs/figures/concept.png)
+
+```mermaid
+flowchart TD
+    I["one item under one identity"] --> A["query A: five draws"]
+    I --> B["query B: five draws"]
+    A --> W["within-query disagreement<br/>(the noise floor)"]
+    B --> W
+    A --> X["across-query disagreement"]
+    B --> X
+    W --> D["Δ = across - within<br/>zero in expectation when the rewrite changes nothing"]
+    X --> D
+    D --> T["permutation test over items, Holm within each model;<br/>stable violations against their exact null expectation;<br/>a cluster-robust test where one prompt answers ten records"]
+```
 
 The difference, averaged over the items, is the **excess divergence** $\bar\Delta$. It needs no labels and is zero
 in expectation when the two queries are interchangeable. We report $\sqrt{\bar\Delta}$, the root-mean-square
@@ -106,6 +128,15 @@ The analysis outputs behind every table and figure, in [`grid/results/a-pairs/`]
 ---
 
 ## Where to look
+
+```mermaid
+flowchart LR
+    D["data/<br/>datasets and conditions"] --> U["grid/build_units.py<br/>the items: grid/units/"]
+    U --> R["grid/run.py, grid/reason.py<br/>the model calls"]
+    R --> L["harness/runs/<br/>one log per run and model"]
+    L --> N["grid/analyze*.py,<br/>grid/paper_numbers.py"]
+    N --> O["grid/results/a-pairs/<br/>every table and figure"]
+```
 
 | if you want | open |
 |---|---|

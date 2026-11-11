@@ -11,6 +11,16 @@ rewrites a value, and `COUNT_LLM` asks how many records of a batch satisfy `p`. 
 authors rewrite such queries as if each answer depended only on the record and the meaning of the condition. An
 **identity** is a pair of queries A and B that must return the same answers if that assumption holds.
 
+```mermaid
+flowchart LR
+    R["record r, condition p"] --> A["query A<br/>e.g. one prompt for p AND q"]
+    R --> B["query B<br/>e.g. F(p), then F(q)"]
+    A --> DA["answer distribution under A"]
+    B --> DB["answer distribution under B"]
+    DA --> E{"equal?"}
+    DB --> E
+```
+
 ## 2. The identities
 
 | | Identity | Query A | Query B | What it assumes |
@@ -72,9 +82,29 @@ a pair is asked p, not p, q, "p and q" and "q and p".
   records of another item), each in both orders. Only the three matching datasets know which records match.
 - **Batch identities** put 10 records in a prompt; batch neighbors and position compare the same record in two
   batches or at two positions.
+
+  ```mermaid
+  flowchart LR
+      G["grid: batches of 10 records"] --> N1["N1: the grid's batches<br/>record r at position j"]
+      G --> N2["N2: column j shifted<br/>same position j, nine new neighbors"]
+      G --> ROT["rotation: same neighbors,<br/>every record one position later"]
+      G --> ONE["each record alone"]
+  ```
+
+  Batch neighbors compares N1 with N2, position compares N1 with the rotation, and batching compares each record
+  alone with N1.
 - **Placement and renamed columns** join a record with its matching record (on WDC Products, two offers of the
   same product) and apply p before the join, after it, and after it with renamed columns.
-- **Idempotence** applies a map that rewrites one text field into a canonical form, then applies it again.
+- **Idempotence** applies a map that rewrites one text field into a canonical form, then applies it again, in
+  two phases so that the two queries never share a draw:
+
+  ```mermaid
+  flowchart LR
+      X["value x"] --> P1["phase 1: draw map(x)<br/>(the inputs)"]
+      P1 --> Y["y = map(x)"]
+      X --> A["query A: map(x) drawn afresh"]
+      Y --> B["query B: map(y) = map(map(x))"]
+  ```
 - **Items** are sampled once with a fixed seed per pair, so every model answers exactly the same items
   ([`grid/build_units.py`](../grid/build_units.py) writes them to [`grid/units/`](../grid/units)).
 
