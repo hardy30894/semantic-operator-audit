@@ -1,4 +1,10 @@
-# Semantic operators do not survive query rewriting
+<h1 align="center">Do Semantic Operators Survive Query Rewriting?</h1>
+
+<h3 align="center"><em>A Noise-Calibrated Audit of LLM-Powered Query Processing</em></h3>
+
+<p align="center">Harsh Dubey and Shubham Vatsal · New York University<br>ICDE 2027 · Experiment, Analysis and Benchmark track</p>
+
+<p align="center"><a href="docs/DESIGN.md">Design</a> · <a href="docs/DATA.md">Data</a> · <a href="grid/results/a-pairs">Results</a> · <a href="#reproduce">Reproduce</a> · <a href="CITATION.cff">Cite</a></p>
 
 Query engines now evaluate filters, joins, maps and aggregates with an LLM, and their optimizers,
 caches and pipelines rewrite those operators as if each answer depended only on the record and the
@@ -9,8 +15,7 @@ Rewriting? A Noise-Calibrated Audit of LLM-Powered Query Processing*.
 
 ![Excess divergence for every identity, model and dataset](docs/figures/heatmap.png)
 
-**Paper:** Harsh Dubey and Shubham Vatsal (New York University), ICDE 2027, Experiment, Analysis and
-Benchmark track. Every table and figure regenerates from the call logs in this repository
+Every table and figure of the paper regenerates from the call logs in this repository
 ([Reproduce](#reproduce)); the analysis outputs are in [`grid/results/a-pairs/`](grid/results/a-pairs).
 
 ---
